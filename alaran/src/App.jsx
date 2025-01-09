@@ -1,4 +1,5 @@
 import './App.css'
+import '@fontawesome/fontawesome-free/css/all.css';
 import About from './components/About'
 import Landing from './components/Landing'
 import NavBar from './components/NavBar'
