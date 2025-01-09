@@ -19,7 +19,6 @@
 
 
 nav{
-  margin-left: 10rem;
   color: var(--color-secondary);
   display: flex;
   font-size: 20px;
@@ -29,6 +28,7 @@ nav{
   align-self: center;
   text-align: center;
   font-family: var(--small-text);
+  width: 100%;
 }
 ul{
   display: flex;
