@@ -36,9 +36,9 @@ img{
 .slider-container {
   position: relative;
   width: 800px;
-  height: 400px;
+  height: 800px;
   margin: 0 auto;
-  overflow: hidden;
+  overflow-x: hidden;
   border: 2px solid #ccc;
   border-radius: 10px;
 }
