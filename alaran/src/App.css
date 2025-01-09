@@ -36,6 +36,12 @@ ul{
   margin-left: 5rem;
   font-weight: 600;
 }
+.icons{
+  display: flex;
+  gap: 10rem;
+  font-size: 20px;
+  margin-left: 10rem;
+}
 
 /* Slider style */
 /* Slider Container: Fullscreen View */
