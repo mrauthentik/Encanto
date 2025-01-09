@@ -6,8 +6,29 @@
   --medium-text: "GFS Didot", serif;
  
 }
-
-div{
-  color: var(--color-secondary);
-  font-family: var(--medium-text);
+*{
+  margin: 0;
+  padding: 0;
 }
+
+
+nav{
+  color: var(--color-primary);
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  align-self: center;
+  text-align: center;
+}
+ul{
+  display: flex;
+  gap: 1rem;
+  list-style-type: none;
+}
+img{
+  width: 50%;
+
+  /* border-radius: 50%; */
+}
+

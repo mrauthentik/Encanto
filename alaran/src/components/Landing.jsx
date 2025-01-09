@@ -1,16 +1,62 @@
-import image1 from '../assets/fashion (3).jpg'
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 
-const Landing = () => {
-  return (
-    <div>
-      
-      <h1> Welcome to Arana</h1>
-      <img src={image1} alt="" />
-    </div>
-  )
-}
+import image1 from '../assets/fashion (1).jpg'; 
+import image2 from '../assets/fashion (2).jpg';
+import image3 from '../assets/fashion (3).jpg';
+import image4 from '../assets/fashion (4).jpg';
 
-export default Landing
+const images = [image1, image2, image3,image4]; // Array of local images
+
+const Slider = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Function to go to the next slide
+  const nextSlide = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+  };
+
+  // Function to go to the previous slide
+  const prevSlide = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+    );
+  };
+
+  // Timer: Automatically switch slides every 5 seconds
+  useEffect(() => {
+    const timer = setInterval(() => {
+      nextSlide();
+    }, 5000); // 5000ms = 5 seconds
+
+    return () => clearInterval(timer); // Clear timer on unmount
+  }, []);
+
+  return (
+    <div className="slider-container">
+      <AnimatePresence>
+        <motion.img
+          key={images[currentIndex]}
+          src={images[currentIndex]}
+          alt={`Slide ${currentIndex + 1}`}
+          className="slider-image"
+          initial={{ opacity: 0, x: 100 }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: -100 }}
+          transition={{ duration: 0.8 }}
+        />
+      </AnimatePresence>
+
+      {/* Navigation Buttons */}
+      <button className="prev-button" onClick={prevSlide}>
+        &#8592; Prev
+      </button>
+      <button className="next-button" onClick={nextSlide}>
+        Next &#8594;
+      </button>
+    </div>
+  );
+};
+
+export default Slider;
