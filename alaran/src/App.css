@@ -96,3 +96,13 @@ section h2{
   color: var(--color-primary);
   font-family: var(--fancy);
 }
+main {
+  margin-top: 4rem;
+   p{
+    font-family: var(--medium-text);
+    font-size: 20px;
+    padding: 2rem auto;
+    width: 50%;
+    margin: auto;
+   }
+}
