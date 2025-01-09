@@ -29,64 +29,40 @@ ul{
 }
 
 /* Slider style */
+/* Slider Container: Fullscreen View */
 .slider-container {
   position: relative;
   width: 100%;
-  height: 800px;
-  margin:0 auto;
-  overflow-x: hidden;
-  padding-top: 10rem;
+  height: 100vh; /* Fullscreen height */
+  overflow: hidden;
 }
 
+/* Slider Wrapper */
+.slider-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Fullscreen Image */
 .slider-image {
   width: 100%;
-  height: 50%;
-  object-fit: cover;
-  position: absolute;
-  top: 0.1;
-  bottom: 5px;
-  left: 0;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the entire screen */
 }
 
+/* Text Overlay at the Bottom */
 .slider-text {
   position: absolute;
-  top: 50%;
+  bottom: 30px; /* Positioned at the bottom */
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   color: #fff;
-  text-shadow: #010101 1px 1px 1px;
-  /* background: rgba(0, 0, 0, 0.5); Transparent black background */
-  padding: 10px 20px;
-  border-radius: 8px;
-  font-size: 44px;
+  font-size: 2rem; /* Adjust font size */
   text-align: center;
   font-weight: bold;
-  font-family: var(--big-text);
-}
-
-.prev-button,
-.next-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  border: none;
-  padding: 10px 15px;
-  cursor: pointer;
-  font-size: 16px;
-  z-index: 10;
-}
-
-.prev-button {
-  left: 10px;
-}
-
-.next-button {
-  right: 10px;
-}
-
-.prev-button:hover,
-.next-button:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Bold text shadow for clarity */
+  padding: 10px 20px;
+  background: rgba(0, 0, 0, 0.4); /* Optional background for better contrast */
+  border-radius: 8px; /* Rounded edges for background */
 }
