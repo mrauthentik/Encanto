@@ -55,10 +55,15 @@ const Slider = () => {
             alt={`Slide ${currentIndex + 1}`}
             className="slider-image"
           />
-          {/* Text Overlay */}
-          <div className="slider-text">
+          {/* Text Overlay with Animation */}
+          <motion.div
+            className="slider-text"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.5 }} // Delay text animation
+          >
             <h2>{texts[currentIndex]}</h2>
-          </div>
+          </motion.div>
         </motion.div>
       </AnimatePresence>
 
