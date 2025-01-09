@@ -77,5 +77,5 @@ section{
 section h1{
  font-size: 30px;
   color: var(--color-primary);
-  font-family: var(--fancy);
+  font-family: 'Dancing Script', serif
 }
