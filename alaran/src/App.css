@@ -1,11 +1,13 @@
 /* CSS Reset */
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Dancing+Script:wght@400..700&family=GFS+Didot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&display=swap');
 :root {
   --color-primary: #010101;
   --color-secondary: #F6B523;
   --big-text: "Bodoni Moda SC", serif;
   --medium-text: "GFS Didot", serif;
   --fancy: "Dancing Script",serif;
+  --small-text: "Playwrite AU SA", sans-serif;
  
 }
 *{
@@ -34,11 +36,11 @@ ul{
   list-style-type: none;
   text-shadow: #0000005d 1px 1px 1px;
   margin-left: 5rem;
-  font-weight: 600;
+  font-weight: 200;
 }
 .icons{
   display: flex;
-  gap: 10rem;
+  gap: 5rem;
   font-size: 20px;
   margin-left: 10rem;
 }
