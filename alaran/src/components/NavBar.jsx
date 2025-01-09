@@ -1,4 +1,4 @@
-import  { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoffee, faSearch, faCartPlus } from '@fortawesome/free-solid-svg-icons';
@@ -9,30 +9,26 @@ const NavBar = () => {
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
-        // If user scrolls more than 50px, apply background color
         controls.start({
           backgroundColor: 'rgba(0, 0, 0, 0.9)',
           color: 'rgba(255, 255, 255, 1)', // White text
           transition: { duration: 0.5 },
         });
       } else {
-        // Make navbar transparent
         controls.start({
-          backgroundColor: 'rgba(0, 0, 0, 0)', // Transparent
+          backgroundColor: 'rgba(0, 0, 0, 0)',
           transition: { duration: 0.3 },
         });
       }
     };
 
     window.addEventListener('scroll', handleScroll);
-
-    // Cleanup on component unmount
     return () => window.removeEventListener('scroll', handleScroll);
   }, [controls]);
 
   return (
     <motion.nav
-      initial={{ backgroundColor: 'rgba(0, 0, 0, 0)' }} // Initially transparent
+      initial={{ backgroundColor: 'rgba(0, 0, 0, 0)' }}
       animate={controls}
       style={{
         position: 'fixed',
@@ -50,10 +46,9 @@ const NavBar = () => {
           <li>Contact</li>
         </ul>
         <div className="icons">
-            <FontAwesomeIcon icon={faCoffee} />
-            <FontAwesomeIcon icon={faSearch} />
-            <FontAwesomeIcon icon={faCartPlus} />
-            
+          <FontAwesomeIcon icon={faCoffee} />
+          <FontAwesomeIcon icon={faSearch} />
+          <FontAwesomeIcon icon={faCartPlus} />
         </div>
       </nav>
     </motion.nav>
