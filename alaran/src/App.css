@@ -17,8 +17,10 @@
 
 
 nav{
-  color: var(--color-primary);
+  margin-left: 10rem;
+  color: var(--color-secondary);
   display: flex;
+  font-size: 20px;
   justify-content: space-between;
   gap: 1rem;
   align-items: center;
@@ -28,8 +30,11 @@ nav{
 }
 ul{
   display: flex;
-  gap: 1rem;
+  gap: 6rem;
   list-style-type: none;
+  text-shadow: #0000005d 1px 1px 1px;
+  margin-left: 5rem;
+  font-weight: 600;
 }
 
 /* Slider style */
