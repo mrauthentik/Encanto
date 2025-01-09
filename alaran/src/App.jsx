@@ -1,12 +1,14 @@
-import { useState } from 'react'
-import image1 from './assets/fashion(1).jpg'
 import './App.css'
+
+import Landing from './components/Landing'
+import NavBar from './components/NavBar'
 
 function App() {
    return (
      <div>
-      <h1> Welcome to Arana</h1>
-      <img src={image1} alt="" />
+      <NavBar />
+      <Landing />
+     
      </div>
    )
 }
