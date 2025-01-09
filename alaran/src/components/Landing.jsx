@@ -1,13 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-
-import image1 from '../assets/fashion (1).jpg'; 
+import image1 from '../assets/fashion (1).jpg';
 import image2 from '../assets/fashion (2).jpg';
 import image3 from '../assets/fashion (3).jpg';
 import image4 from '../assets/fashion (4).jpg';
 
-const images = [image1, image2, image3,image4]; // Array of local images
+const images = [image1, image2, image3, image4]; // Array of local images
+const texts = [
+  "Fashion for the Bold",
+  "Style Meets Elegance",
+  "Unleash Your Confidence",
+  "Timeless Trends, Endless Style",
+]; // Array of text corresponding to each image
 
 const Slider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -36,16 +41,25 @@ const Slider = () => {
   return (
     <div className="slider-container">
       <AnimatePresence>
-        <motion.img
-          key={images[currentIndex]}
-          src={images[currentIndex]}
-          alt={`Slide ${currentIndex + 1}`}
-          className="slider-image"
+        <motion.div
+          key={currentIndex}
+          className="slider-wrapper"
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -100 }}
           transition={{ duration: 0.8 }}
-        />
+        >
+          {/* Image */}
+          <img
+            src={images[currentIndex]}
+            alt={`Slide ${currentIndex + 1}`}
+            className="slider-image"
+          />
+          {/* Text Overlay */}
+          <div className="slider-text">
+            <h2>{texts[currentIndex]}</h2>
+          </div>
+        </motion.div>
       </AnimatePresence>
 
       {/* Navigation Buttons */}
