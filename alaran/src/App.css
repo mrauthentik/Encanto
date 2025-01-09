@@ -9,6 +9,7 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 
@@ -26,30 +27,41 @@ ul{
   gap: 1rem;
   list-style-type: none;
 }
-img{
-  width: 50%;
-
-  /* border-radius: 50%; */
-}
 
 /* Slider style */
 .slider-container {
   position: relative;
-  width: 800px;
+  width: 100%;
   height: 800px;
-  margin: 0 auto;
+  margin:0 auto;
   overflow-x: hidden;
-  border: 2px solid #ccc;
-  border-radius: 10px;
+  padding-top: 10rem;
 }
 
 .slider-image {
   width: 100%;
-  height: 100%;
+  height: 50%;
   object-fit: cover;
   position: absolute;
-  top: 0;
+  top: 0.1;
+  bottom: 5px;
   left: 0;
+}
+
+.slider-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-shadow: #010101 1px 1px 1px;
+  /* background: rgba(0, 0, 0, 0.5); Transparent black background */
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 44px;
+  text-align: center;
+  font-weight: bold;
+  font-family: var(--big-text);
 }
 
 .prev-button,
