@@ -52,9 +52,8 @@ const NavBar = () => {
         <div className="icons">
             <FontAwesomeIcon icon={faCoffee} />
             <FontAwesomeIcon icon={faSearch} />
-            <FontAwesomeIcon icon={faCart} />
-            <i className="fas fa-search"></i>
-            <i className="fas fa-bars"></i>
+            <FontAwesomeIcon icon={faCartPlus} />
+            
         </div>
       </nav>
     </motion.nav>
