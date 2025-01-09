@@ -66,6 +66,8 @@ const Card = () => {
                         style={{ width:'40%', position: 'absolute' }}
                     />
         )})}
+
+        <button className="text-black mt-[400px] rounded-md py-2  px-4" onClick={handleNext}></button>
     </div>
   )
 }
