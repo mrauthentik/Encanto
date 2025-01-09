@@ -1,5 +1,5 @@
 import './App.css'
-
+import About from './components/About'
 import Landing from './components/Landing'
 import NavBar from './components/NavBar'
 
@@ -8,7 +8,7 @@ function App() {
      <div>
       <NavBar />
       <Landing />
-     
+     <About />
      </div>
    )
 }

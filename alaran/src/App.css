@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=GFS+Didot&display=swap');
+/* CSS Reset */
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Dancing+Script:wght@400..700&family=GFS+Didot&display=swap');
 :root {
   --color-primary: #010101;
   --color-secondary: #F6B523;
   --big-text: "Bodoni Moda SC", serif;
   --medium-text: "GFS Didot", serif;
+  --fancy: "Dancing Script", cursive;
  
 }
 *{
@@ -65,4 +67,15 @@ ul{
   padding: 10px 20px;
   background: rgba(0, 0, 0, 0.4); /* Optional background for better contrast */
   border-radius: 8px; /* Rounded edges for background */
+}
+
+/* About US Page */
+section{
+  background-color: white; 
+  padding: 4rem;
+}
+section h1{
+ font-size: 30px;
+  color: var(--color-primary);
+  font-family: var(--fancy);
 }
