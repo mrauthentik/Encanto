@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
 import image1 from "../assets/fashion (1).jpg";
 import image2 from "../assets/fashion (2).jpg";
 import image3 from "../assets/fashion (3).jpg";
@@ -62,11 +63,9 @@ const Card = () => {
                         animate={positions[postionIndex[index]]}
                         variants={imageVariants}
                         transition={{ duration: 0.5 }}
-                        style={{ width }}
+                        style={{ width:'40%', position: 'absolute' }}
                     />
-                )
-        }
-    
+        )})}
     </div>
   )
 }
