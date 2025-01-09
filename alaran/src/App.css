@@ -28,7 +28,7 @@ nav{
   align-items: center;
   align-self: center;
   text-align: center;
-  font-family: var(--medium-text);
+  font-family: var(--small-text);
 }
 ul{
   display: flex;
@@ -36,7 +36,7 @@ ul{
   list-style-type: none;
   text-shadow: #0000005d 1px 1px 1px;
   margin-left: 5rem;
-  font-weight: 200;
+  font-weight: 600;
 }
 .icons{
   display: flex;
