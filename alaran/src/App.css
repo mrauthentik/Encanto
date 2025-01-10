@@ -351,37 +351,91 @@ main p {
   margin-bottom: 4rem;
   text-align: center;
 } */
-.unisex{
+/* Main Section Styling */
+.unisex {
   margin-top: 4rem;
-  padding-left: 3rem;
-  /* width: 50%; */
+  padding: 0 2rem;
 }
-.unisex-container{
+
+/* Container Styling */
+.unisex-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-top: 5rem;
   gap: 20px;
-  width: 80%;
+  width: 90%; /* Adjusted for better responsiveness */
+  max-width: 1200px; /* Limit max width for large screens */
   margin: auto;
+  flex-wrap: wrap; /* Enable wrapping for smaller screens */
 }
+
+/* Side Text Styling */
 .unisex .side {
+  background-color: black;
   color: white;
   width: 50%;
-  font-size: 10px;
+  max-width: 400px; /* Limit text box width */
+  font-size: 1rem; /* Adjust font size */
   font-family: var(--small-text);
-  background-color: black;
+  padding: 1rem;
+  text-align: center;
 
-  /* Flexbox for vertical and horizontal alignment */
+  /* Flexbox for alignment */
   display: flex;
   align-items: center;
   justify-content: center;
 
-  /* Adjust text rotation */
+  /* Rotated Text */
   writing-mode: vertical-rl; /* Rotates the text vertically */
-  text-orientation: upright; /* Ensures the text stays upright */
-  transform: rotate(0deg); /* Remove 'rotateX' - incorrect syntax */
+  text-orientation: upright;
 }
-.unisex-images{
-  display: flex;
 
+/* Image Container Styling */
+.unisex-images {
+  display: flex;
+  flex-direction: column; /* Stack images vertically for better control */
+  gap: 20px;
+  width: 50%;
+}
+
+/* Individual Image Styling */
+.unisex-images img {
+  width: 100%; /* Ensure images are responsive */
+  max-width: 500px; /* Limit max width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px;
+  object-fit: cover; /* Ensure the images fit nicely */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .unisex-container {
+    flex-direction: column; /* Stack content vertically */
+    align-items: center;
+  }
+
+  .unisex .side {
+    width: 100%; /* Full width for smaller screens */
+    max-width: none;
+    font-size: 0.9rem; /* Slightly smaller font size */
+    padding: 1.5rem 0; /* Adjust padding */
+  }
+
+  .unisex-images {
+    width: 100%; /* Full width for images */
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .unisex .side {
+    font-size: 0.8rem; /* Smaller font for mobile */
+    padding: 1rem;
+  }
+
+  .unisex-images img {
+    max-width: 100%; /* Ensure images occupy full width */
+  }
 }
