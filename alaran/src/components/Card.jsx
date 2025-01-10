@@ -7,7 +7,7 @@ import image4 from "../assets/fashion (5).jpg";
 import image5 from "../assets/fashion (7).jpg";
 
 const Card = () => {
-    const [postionIndex, setPositionIndex] = useState([0, 1, 2, 3, 4]);
+    const [positionIndex, setPositionIndex] = useState([0, 1, 2, 3, 4]);
 
     const handleNext = () => {      
         setPositionIndex((prevIndex) => {
@@ -61,7 +61,7 @@ const Card = () => {
                     alt={`Slide ${index + 1}`}
                     className="rounded-[12px]"
                     initial={false}
-                    animate={positions[postionIndex[index]]}
+                    animate={positions[positionIndex[index]]}
                     variants={imageVariants}
                     transition={{ duration: 0.5 }}
                     style={{ width: '40%', position: 'absolute' }}

@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHeart, faSearch, faCartPlus } from '@fortawesome/free-brands-svg-icons'
+import { faHeart, faSearch } from '@fortawesome/free-solid-svg-icons'
 
 const NavBar = () => {
   const controls = useAnimation();
@@ -48,7 +48,7 @@ const NavBar = () => {
         <div className="icons">
           <FontAwesomeIcon icon={faHeart} />
           <FontAwesomeIcon icon={faSearch} />
-          <FontAwesomeIcon icon={faCartPlus} />
+          <FontAwesomeIcon  />
         </div>
       </nav>
     </motion.nav>
