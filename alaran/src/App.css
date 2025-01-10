@@ -155,11 +155,14 @@ main {
 .unisex-section{
   display: flex;
 }
-
+.unisex h2{
+  margin-bottom: 4rem;
+}
 .unisex{
   margin-top: 4rem;
   padding-left: 3rem;
   display: flex;
+  justify-content: space-around;
   width: 50%;
 }
 .unisex .side {
