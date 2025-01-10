@@ -61,12 +61,12 @@ const Card = () => {
                     key={index}
                     src={image}
                     alt={`Slide ${index + 1}`}
-                    className="rounded-[12px]"
+                    className="card-img rounded-[12px]"
                     initial={false}
                     animate={positions[positionIndex[index]]}
                     variants={imageVariants}
                     transition={{ duration: 0.5 }}
-                    style={{ width: '40%', position: 'absolute' }}
+                    style={{ width: '25%', position: 'absolute' }}
                 />
             ))} 
             <br /> <br /> <br />

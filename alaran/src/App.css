@@ -36,7 +36,7 @@ ul{
   list-style-type: none;
   text-shadow: #0000005d 1px 1px 1px;
   margin-left: 5rem;
-  font-weight: 600;
+  font-weight: 100;
 }
 .icons{
   display: flex;
@@ -74,13 +74,19 @@ ul{
   object-fit: cover; /* Ensures the image covers the entire screen */
 }
 .home-btn{
-  background-color: var(--color-primary);
+  background-color: transparent;
+  border: 3px solid var(--color-secondary);
   color: var(--color-secondary);
   font-family:Arial, Helvetica, sans-serif;
   padding: 10px;
-  width: 100%;
+  width: 70%;
   font-weight: 200;
 
+}
+.home-btn:hover{
+  background-color: var(--color-primary);
+  color: white;
+  transition: 0.6s;
 }
 img{
   width: 50%;
@@ -130,13 +136,16 @@ main {
    }
 }
 .card{
-  margin-top: 15rem;
+  margin-top: 1rem;
+}
+.card-img{
+  height: 80%;
 }
 .card-btn{
   background-color: black;
   color: white;
   z-index: 10;
-  margin-top: 50%;
+  margin-top: 35%;
   font-family: var(--medium-text);
 }
 .card-btn:active{
