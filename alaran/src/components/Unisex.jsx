@@ -6,7 +6,7 @@ const Unisex = () => {
     <div>
       <main className='unisex'>
         <h2>Unisex</h2>
-        <div className="container">
+        <div className="unisex-container">
             <div className="side">
                Alaran <i>for the culture...</i>
             </div>

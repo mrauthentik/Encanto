@@ -152,7 +152,7 @@ main {
   color: var(--color-secondary);
 }
 
-.unisex-section{
+.unisex-container{
   display: flex;
 }
 .unisex h2{
