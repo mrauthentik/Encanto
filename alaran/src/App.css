@@ -4,6 +4,9 @@
 :root {
   --color-primary: #010101;
   --color-secondary: #F6B523;
+  --yellow: #FFCB04;
+  --burnt-orange: #F5821F;
+  --dark:#58574B;
   --big-text: "Bodoni Moda SC", serif;
   --medium-text: "GFS Didot", serif;
   --fancy: "Dancing Script",serif;
@@ -17,39 +20,93 @@
 
 }
 
-
-nav{
+/* NavBar Styles */
+nav {
   color: var(--color-secondary);
-  display: flex;
   font-size: 20px;
-  justify-content: space-between;
-  gap: 1rem;
-  align-items: center;
-  align-self: center;
-  text-align: center;
   font-family: var(--medium-text);
   width: 100%;
 }
-ul{
+
+.navbar-container {
   display: flex;
-  gap: 6rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: var(--fancy);
+  font-size: 2rem;
+}
+
+.nav-items {
+  display: flex;
+  gap: 2rem;
   list-style-type: none;
   text-shadow: #0000005d 1px 1px 1px;
-  margin-left: 5rem;
-  font-weight: 100;
 }
-.icons{
+
+.icons {
   display: flex;
-  gap: 5rem;
+  gap: 1rem;
   font-size: 20px;
-  margin-left: 10rem;
 }
-.icons :hover{
+
+.icons :hover {
   color: tomato;
 }
-.icons :active{
+
+/* Desktop Nav Visibility */
+.desktop-nav {
+  display: flex;
+}
+
+.menu-icon {
+  display: none; /* Hidden by default (for desktop view) */
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Mobile Navigation */
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+  z-index: 999;
+}
+
+.mobile-nav li {
+  color: var(--color-secondary);
+  font-size: 1.5rem;
+  font-family: var(--medium-text);
+  cursor: pointer;
+}
+
+.mobile-nav li:hover {
   color: tomato;
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .desktop-nav {
+    display: none; /* Hide desktop navigation */
+  }
+
+  .menu-icon {
+    display: block; /* Show menu icon */
+  }
+}
+
+
 
 /* Slider style */
 /* Slider Container: Fullscreen View */
@@ -109,32 +166,66 @@ img{
 }
 
 /* About US Page */
-section{
-  background-color: white; 
+/* General Section Styles */
+section {
+  background-color: white;
   padding: 4rem;
 }
-section h2{
-  margin-top: 10rem;
- text-align: center;
-  font-size: 70px;
+
+section h2 {
+  margin-top: 5rem;
+  text-align: center;
+  font-size: 3.5rem; /* Adjust font size for better scalability */
   color: var(--color-primary);
   font-family: var(--fancy);
 }
-h2{
-  text-align: center;
-  font-size: 70px;
-  font-family: var(--fancy);
-}
+
+/* Paragraph and Main Styles */
 main {
-  margin-top: 4rem;
-   p{
-    font-family: var(--medium-text);
-    font-size: 20px;
-    padding: 2rem auto;
-    width: 50%;
-    margin: auto;
-   }
+  margin-top: 2rem;
 }
+
+main p {
+  font-family: var(--medium-text);
+  font-size: 1.2rem;
+  line-height: 1.8; /* Improve readability */
+  text-align: justify; /* Better alignment for large text */
+  padding: 0;
+  width: 70%;
+  margin: 0 auto; /* Center content */
+  color: var(--color-primary);
+}
+
+/* Mobile-Responsive Styles */
+@media (max-width: 768px) {
+  section {
+    padding: 2rem;
+  }
+
+  section h2 {
+    font-size: 2.5rem; /* Smaller font size for mobile */
+    margin-top: 3rem;
+  }
+
+  main p {
+    width: 90%; /* Reduce width for smaller screens */
+    font-size: 1rem; /* Smaller text size */
+  }
+}
+
+/* Extra Small Devices (e.g., iPhones) */
+@media (max-width: 480px) {
+  section h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+
+  main p {
+    font-size: 0.9rem;
+    width: 95%; /* Almost full width */
+  }
+}
+
 .card{
   margin-top: 1rem;
 }
@@ -167,7 +258,7 @@ main {
   justify-content: space-between;
   margin-top: 5rem;
   gap: 20px;
-  width: 70%;
+  width: 80%;
   margin: auto;
 }
 .unisex .side {
