@@ -8,7 +8,7 @@ const Unisex = () => {
         <h2>Unisex</h2>
         <div className="unisex-container">
             <div className="side">
-               Alaran <i>for the culture...</i>
+               Alaran  for  the culture...
             </div>
             <div className="unisex-images">
               <img src={image1} className='unisex-img1' alt="" />

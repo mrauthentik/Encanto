@@ -17,8 +17,8 @@ function App() {
       <About />
       <Card />
       <Unisex />
-      <Male />
       <Female />
+      <Male />
     </div>
    )
 }

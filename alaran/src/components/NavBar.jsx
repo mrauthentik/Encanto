@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { motion, useAnimation, AnimatePresence } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart, faSearch, faCartShopping, faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import logo from '../assets/alaran log2.png'
 
 const NavBar = () => {
   const controls = useAnimation();
@@ -44,7 +45,9 @@ const NavBar = () => {
       }}
     >
       <div className="navbar-container">
-        <div className="logo">LOGO</div>
+        <div className="logo">
+          <a href="#"><img src={logo} alt=""  className="logo"/>  </a>
+        </div>
 
         {/* Desktop Navigation */}
         <ul className="nav-items desktop-nav">

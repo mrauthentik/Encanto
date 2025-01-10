@@ -55,7 +55,10 @@ nav {
 .icons :hover {
   color: tomato;
 }
-
+.logo{
+  width: 25%;
+  height: 25%;
+}
 /* Desktop Nav Visibility */
 .desktop-nav {
   display: flex;
@@ -100,7 +103,10 @@ nav {
   .desktop-nav {
     display: none; /* Hide desktop navigation */
   }
-
+.logo{
+  width: 30%;
+  height: 30%;
+}
   .menu-icon {
     display: block; /* Show menu icon */
   }
@@ -438,4 +444,11 @@ main p {
   .unisex-images img {
     max-width: 100%; /* Ensure images occupy full width */
   }
+}
+
+.female{
+  height: 89vh;
+  background-size: contain;
+  background-repeat: none;
+   background: url('../src/assets/fashion\ \(2\).jpg');
 }
