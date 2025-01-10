@@ -152,10 +152,15 @@ main {
   color: var(--color-secondary);
 }
 
+.unisex-section{
+  display: flex;
+}
+
 .unisex{
   margin-top: 4rem;
   padding-left: 3rem;
   display: flex;
+  width: 50%;
 }
 .unisex .side {
   color: white;
