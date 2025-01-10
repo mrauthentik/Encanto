@@ -151,3 +151,26 @@ main {
 .card-btn:active{
   color: var(--color-secondary);
 }
+
+.unisex{
+  margin-top: 4rem;
+  padding-left: 3rem;
+  display: flex;
+}
+.unisex .side {
+  color: white;
+  width: 10%;
+  font-size: 10px;
+  font-family: var(--small-text);
+  background-color: black;
+
+  /* Flexbox for vertical and horizontal alignment */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Adjust text rotation */
+  writing-mode: vertical-rl; /* Rotates the text vertically */
+  text-orientation: upright; /* Ensures the text stays upright */
+  transform: rotate(0deg); /* Remove 'rotateX' - incorrect syntax */
+}
