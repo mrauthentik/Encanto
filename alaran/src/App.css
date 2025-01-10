@@ -152,22 +152,27 @@ main {
   color: var(--color-secondary);
 }
 
-.unisex-container{
-  display: flex;
-}
-.unisex h2{
+
+/* .unisex h2{
   margin-bottom: 4rem;
-}
+  text-align: center;
+} */
 .unisex{
   margin-top: 4rem;
   padding-left: 3rem;
+  /* width: 50%; */
+}
+.unisex-container{
   display: flex;
-  justify-content: space-around;
-  width: 50%;
+  justify-content: space-between;
+  margin-top: 5rem;
+  gap: 20px;
+  width: 70%;
+  margin: auto;
 }
 .unisex .side {
   color: white;
-  width: 10%;
+  width: 50%;
   font-size: 10px;
   font-family: var(--small-text);
   background-color: black;
@@ -181,4 +186,8 @@ main {
   writing-mode: vertical-rl; /* Rotates the text vertically */
   text-orientation: upright; /* Ensures the text stays upright */
   transform: rotate(0deg); /* Remove 'rotateX' - incorrect syntax */
+}
+.unisex-images{
+  display: flex;
+
 }
