@@ -7,18 +7,18 @@ import image4 from "../assets/fashion (5).jpg";
 import image5 from "../assets/fashion (7).jpg";
 
 const Card = () => {
-    const [postionIndex, setPositionIndex] = useState([0, 1, 2, 3,4]);
+    const [postionIndex, setPositionIndex] = useState([0, 1, 2, 3, 4]);
 
     const handleNext = () => {      
         setPositionIndex((prevIndex) => {
-            const updateIndex = prevIndex.map((prevIndex) => {
-                (prevIndex + 1) % 5;
-               
+            const updateIndex = prevIndex.map((index) => {
+                return (index + 1) % 5;
             });
-             return updateIndex;
-            });
-    }
-    const images = [image1, image2, image3, image4,image5];
+            return updateIndex;
+        });
+    };
+
+    const images = [image1, image2, image3, image4, image5];
     const positions = ['center', 'left', 'right', 'left1', 'right1'];
 
     const imageVariants = {
@@ -50,29 +50,26 @@ const Card = () => {
             x: "50%",
             scale: 0.7,
         },
-    }
-  return (
-    <div className=" card flex items-center justify-center h-screen flex-col sm:block md:flex">
-        {
-            images.map((image, index) => {
-                return (
-                    <motion.img
-                        key={index}
-                        src={image}
-                        alt={`Slide ${index + 1}`}
-                        className="rounded-[12px]"
-                        initial={false}
-                        animate={positions[postionIndex[index]]}
-                        variants={imageVariants}
-                        transition={{ duration: 0.5 }}
-                        style={{ width:'40%', position: 'absolute' }}
-                    />
-        )})}
+    };
 
-        <button className="card-btn text-black mt-[400px] rounded-md py-2  px-4" onClick={handleNext}>Next</button>
-      
-    </div>
-  )
-}
+    return (
+        <div className="card flex items-center justify-center h-screen flex-col sm:block md:flex">
+            {images.map((image, index) => (
+                <motion.img
+                    key={index}
+                    src={image}
+                    alt={`Slide ${index + 1}`}
+                    className="rounded-[12px]"
+                    initial={false}
+                    animate={positions[postionIndex[index]]}
+                    variants={imageVariants}
+                    transition={{ duration: 0.5 }}
+                    style={{ width: '40%', position: 'absolute' }}
+                />
+            ))}
+            <button className="card-btn text-black mt-[400px] rounded-md py-2 px-4" onClick={handleNext}>Next</button>
+        </div>
+    );
+};
 
-export default Card
+export default Card;
