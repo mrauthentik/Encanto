@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHeart, faSearch, faCartPlus } from '@fortawesome/free-solid-svg-icons'
+import { faHeart, faSearch, faCartPlus } from '@fortawesome/free-brands-svg-icons'
 
 const NavBar = () => {
   const controls = useAnimation();
@@ -11,7 +11,7 @@ const NavBar = () => {
       if (window.scrollY > 50) {
         controls.start({
           backgroundColor: 'rgba(0, 0, 0, 0.9)',
-          color: 'rgba(255, 255, 255, 1)', // White text
+          currentColor: 'rgba(255, 255, 255, 1)', // White text
           transition: { duration: 0.5 },
         });
       } else {

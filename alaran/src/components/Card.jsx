@@ -3,20 +3,22 @@ import { motion } from "framer-motion";
 import image1 from "../assets/fashion (1).jpg";
 import image2 from "../assets/fashion (2).jpg";
 import image3 from "../assets/fashion (3).jpg";
-import image4 from "../assets/fashion (4).jpg";
+import image4 from "../assets/fashion (5).jpg";
+import image5 from "../assets/fashion (7).jpg";
 
 const Card = () => {
-    const [postionIndex, setPositionIndex] = useState([0, 1, 2, 3]);
+    const [postionIndex, setPositionIndex] = useState([0, 1, 2, 3,4]);
 
     const handleNext = () => {      
         setPositionIndex((prevIndex) => {
             const updateIndex = prevIndex.map((prevIndex) => {
-                (prevIndex + 1) % 4;
-                return updateIndex;
+                (prevIndex + 1) % 5;
+               
             });
-        });
+             return updateIndex;
+            });
     }
-    const images = [image1, image2, image3, image4];
+    const images = [image1, image2, image3, image4,image5];
     const positions = ['center', 'left', 'right', 'left1', 'right1'];
 
     const imageVariants = {
@@ -50,7 +52,7 @@ const Card = () => {
         },
     }
   return (
-    <div className="flex items-center justify-center h-screen flex-col">
+    <div className=" card flex items-center justify-center h-screen flex-col sm:block md:flex">
         {
             images.map((image, index) => {
                 return (
@@ -67,7 +69,8 @@ const Card = () => {
                     />
         )})}
 
-        <button className="text-black mt-[400px] rounded-md py-2  px-4" onClick={handleNext}></button>
+        <button className="card-btn text-black mt-[400px] rounded-md py-2  px-4" onClick={handleNext}>Next</button>
+      
     </div>
   )
 }

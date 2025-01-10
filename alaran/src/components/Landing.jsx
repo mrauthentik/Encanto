@@ -4,14 +4,18 @@ import { motion, AnimatePresence } from "framer-motion";
 import image1 from "../assets/fashion (1).jpg";
 import image2 from "../assets/fashion (2).jpg";
 import image3 from "../assets/fashion (3).jpg";
-import image4 from "../assets/fashion (4).jpg";
+import image4 from "../assets/fashion (5).jpg";
+import image5 from "../assets/fashion (6).jpg";
+import image6 from "../assets/fashion (8).jpg";
 
-const images = [image1, image2, image3, image4];
+const images = [image1, image2, image3, image4, image5, image6];
 const texts = [
-  "Fashion for the Bold",
+  "About the Culture",
   "Style Meets Elegance",
   "Unleash Your Confidence",
   "Timeless Trends, Endless Style",
+  "Fashion for the Bold",
+  "With the Beauty"
 ];
 
 const Slider = () => {
@@ -37,10 +41,10 @@ const Slider = () => {
         <motion.div
           key={currentIndex}
           className="slider-wrapper"
-          initial={{ opacity: 0 }}
+          initial={{ opacity: 0.9 }}
           animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.8 }}
+          exit={{ opacity: 1 }}
+          transition={{ duration: 2 }}
         >
           {/* Fullscreen Image */}
           <img
@@ -56,6 +60,7 @@ const Slider = () => {
             transition={{ duration: 0.8, delay: 0.3 }}
           >
             <h2>{texts[currentIndex]}</h2>
+            <button className="home-btn">SHOP NOW</button>
           </motion.div>
         </motion.div>
       </AnimatePresence>
