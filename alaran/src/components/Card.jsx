@@ -54,6 +54,7 @@ const Card = () => {
 
     return (
         <div className="card flex items-center justify-center h-screen flex-col sm:block md:flex">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="##F6B523" fill-opacity="1" d="M0,64L0,32L96,32L96,224L192,224L192,256L288,256L288,320L384,320L384,256L480,256L480,128L576,128L576,160L672,160L672,224L768,224L768,128L864,128L864,192L960,192L960,128L1056,128L1056,256L1152,256L1152,32L1248,32L1248,160L1344,160L1344,0L1440,0L1440,0L1344,0L1344,0L1248,0L1248,0L1152,0L1152,0L1056,0L1056,0L960,0L960,0L864,0L864,0L768,0L768,0L672,0L672,0L576,0L576,0L480,0L480,0L384,0L384,0L288,0L288,0L192,0L192,0L96,0L96,0L0,0L0,0Z"></path></svg>
             {images.map((image, index) => (
                 <motion.img
                     key={index}
