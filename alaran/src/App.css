@@ -11,6 +11,7 @@
   --medium-text: "GFS Didot", serif;
   --fancy: "Dancing Script",serif;
   --small-text: "Playwrite AU SA", sans-serif;
+  --font: 'Vonique_64', sans-serif;
  
 }
 *{
@@ -24,7 +25,7 @@
 nav {
   color: var(--color-secondary);
   font-size: 20px;
-  font-family: var(--medium-text);
+  font-family: var(--font);
   width: 100%;
 }
 
@@ -139,9 +140,9 @@ nav {
 /* Button Styles */
 .home-btn {
   background-color: transparent;
-  border: 3px solid var(--color-secondary);
+  border: 1px solid var(--color-secondary);
   color: var(--color-secondary);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font);
   padding: 10px 20px;
   font-weight: 400;
   font-size: 1.2rem;
@@ -223,7 +224,7 @@ section h2, main h2 {
   text-align: center;
   font-size: 3.5rem; /* Adjust font size for better scalability */
   color: var(--color-primary);
-  font-family: var(--fancy);
+  font-family: var(--font);
 }
 
 /* Paragraph and Main Styles */
@@ -324,7 +325,7 @@ main p {
 @media (max-width: 768px) {
   .card-img {
     height: 60%; /* Adjust image height for tablets */
-    max-width: 90%;
+    max-width: 100%;
   }
 
   .card-btn {
@@ -341,7 +342,7 @@ main p {
   }
 
   .card-img {
-    height: 50%; /* Further reduce height for mobile */
+    height: 60%; /* Further reduce height for mobile */
     max-width: 100%; /* Ensure images are full width */
   }
 
@@ -378,23 +379,15 @@ main p {
 
 /* Side Text Styling */
 .unisex .side {
-  background-color: black;
-  color: white;
+ 
+  /* color: white; */
   width: 50%;
   max-width: 400px; /* Limit text box width */
-  font-size: 1rem; /* Adjust font size */
-  font-family: var(--small-text);
   padding: 1rem;
   text-align: center;
-
-  /* Flexbox for alignment */
   display: flex;
   align-items: center;
   justify-content: center;
-
-  /* Rotated Text */
-  writing-mode: vertical-rl; /* Rotates the text vertically */
-  text-orientation: upright;
 }
 
 /* Image Container Styling */
@@ -450,5 +443,5 @@ main p {
   height: 89vh;
   background-size: contain;
   background-repeat: none;
-   background: url('../src/assets/fashion\ \(2\).jpg');
+  font-family:  'Vonique_64', sans-serif;
 }

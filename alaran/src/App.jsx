@@ -1,4 +1,5 @@
 import './App.css'
+import './font.css'
 import About from './components/About'
 import Card from './components/Card'
 import Female from './components/Female'
