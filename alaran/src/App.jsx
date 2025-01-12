@@ -7,6 +7,7 @@ import Landing from './components/Landing'
 import Male from './components/Male'
 import NavBar from './components/NavBar'
 import Unisex from './components/Unisex'
+import Footer from './components/Footer'
 
 
 
@@ -20,6 +21,7 @@ function App() {
       <Unisex />
       <Female />
       <Male />
+      <Footer />
     </div>
    )
 }
