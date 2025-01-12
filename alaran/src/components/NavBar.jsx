@@ -1,32 +1,11 @@
 import { useState, useEffect } from "react";
-import { motion, useAnimation, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart, faSearch, faCartShopping, faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import logo from '../assets/alaran log2.png';
 
 const NavBar = () => {
-  const controls = useAnimation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        controls.start({
-          backgroundColor: "rgba(0, 0, 0, 0.9)",
-          color: "rgba(255, 255, 255, 1)",
-          transition: { duration: 0.5 },
-        });
-      } else {
-        controls.start({
-          backgroundColor: "rgba(0, 0, 0, 0)",
-          transition: { duration: 0.3 },
-        });
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [controls]);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen((prev) => !prev);
@@ -35,7 +14,9 @@ const NavBar = () => {
   return (
     <motion.nav
       initial={{ backgroundColor: "rgba(0, 0, 0, 0)" }}
-      animate={controls}
+      animate={{
+        backgroundColor: window.scrollY > 50 ? "rgba(0, 0, 0, 0.9)" : "rgba(0, 0, 0, 0)",
+      }}
       style={{
         position: "fixed",
         top: 0,
@@ -47,7 +28,7 @@ const NavBar = () => {
       <div className="navbar-container">
         <div className="logo">
           <a href="#">
-            <img src={logo} alt="" className="logo" />
+            <img src={logo} alt="Logo" />
           </a>
         </div>
         <div className="nav-text">ALARAN AFRICA</div>
@@ -59,6 +40,13 @@ const NavBar = () => {
           <li>Contact</li>
         </ul>
 
+        {/* Desktop Icons */}
+        <div className="icons">
+          <FontAwesomeIcon icon={faHeart} />
+          <FontAwesomeIcon icon={faSearch} />
+          <FontAwesomeIcon icon={faCartShopping} />
+        </div>
+
         {/* Mobile Menu Icon */}
         <FontAwesomeIcon
           icon={isMobileMenuOpen ? faTimes : faBars}
@@ -66,11 +54,11 @@ const NavBar = () => {
           onClick={toggleMobileMenu}
         />
 
-        {/* Mobile Navigation (Framer Motion) */}
+        {/* Mobile Navigation */}
         <AnimatePresence>
           {isMobileMenuOpen && (
             <motion.ul
-              className={`nav-items mobile-nav ${isMobileMenuOpen ? "open" : ""}`}
+              className="nav-items mobile-nav open"
               initial={{ x: "100%" }}
               animate={{ x: "0%" }}
               exit={{ x: "100%" }}
