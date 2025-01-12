@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { motion, useAnimation, AnimatePresence } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart, faSearch, faCartShopping, faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
-import logo from '../assets/alaran log2.png'
+import logo from '../assets/alaran log2.png';
 
 const NavBar = () => {
   const controls = useAnimation();
@@ -13,7 +13,7 @@ const NavBar = () => {
       if (window.scrollY > 50) {
         controls.start({
           backgroundColor: "rgba(0, 0, 0, 0.9)",
-          color: "rgba(255, 255, 255, 1)", // White text
+          color: "rgba(255, 255, 255, 1)",
           transition: { duration: 0.5 },
         });
       } else {
@@ -46,11 +46,11 @@ const NavBar = () => {
     >
       <div className="navbar-container">
         <div className="logo">
-          <a href="#"><img src={logo} alt=""  className="logo"/>  </a>
+          <a href="#">
+            <img src={logo} alt="" className="logo" />
+          </a>
         </div>
-        <div className="nav-text">
-          ALARAN AFRICA
-        </div>
+        <div className="nav-text">ALARAN AFRICA</div>
 
         {/* Desktop Navigation */}
         <ul className="nav-items desktop-nav">
@@ -66,26 +66,26 @@ const NavBar = () => {
           onClick={toggleMobileMenu}
         />
 
-        {/* Icons */}
-        <div className="icons">
-          <FontAwesomeIcon icon={faHeart} />
-          <FontAwesomeIcon icon={faSearch} />
-          <FontAwesomeIcon icon={faCartShopping} />
-        </div>
-
         {/* Mobile Navigation (Framer Motion) */}
         <AnimatePresence>
           {isMobileMenuOpen && (
             <motion.ul
-              className="nav-items mobile-nav"
-              initial={{ x: "-100%" }}
-              animate={{ x: 0 }}
-              exit={{ x: "-100%" }}
+              className={`nav-items mobile-nav ${isMobileMenuOpen ? "open" : ""}`}
+              initial={{ x: "100%" }}
+              animate={{ x: "0%" }}
+              exit={{ x: "100%" }}
               transition={{ duration: 0.5 }}
             >
               <li onClick={toggleMobileMenu}>Home</li>
               <li onClick={toggleMobileMenu}>About</li>
               <li onClick={toggleMobileMenu}>Contact</li>
+
+              {/* Mobile Icons */}
+              <div className="icons mobile-icons">
+                <FontAwesomeIcon icon={faHeart} />
+                <FontAwesomeIcon icon={faSearch} />
+                <FontAwesomeIcon icon={faCartShopping} />
+              </div>
             </motion.ul>
           )}
         </AnimatePresence>
