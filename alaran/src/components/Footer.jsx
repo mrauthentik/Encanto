@@ -80,10 +80,10 @@ const Footer = () => {
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.5, duration: 0.8 }}
       >
-       <FontAwesomeIcon icon={faFacebook} />
-        <FontAwesomeIcon icon={faWhatsapp} />
-        <FontAwesomeIcon icon={faInstagram} />
-        <FontAwesomeIcon icon={faTwitter} />
+       <FontAwesomeIcon icon={faFacebook}  className="icon"/>
+        <FontAwesomeIcon icon={faWhatsapp} className="icon" />
+        <FontAwesomeIcon icon={faInstagram}className="icon" />
+        <FontAwesomeIcon icon={faTwitter} className="icon" />
       </motion.div>
 
       {/* Bottom Section */}
