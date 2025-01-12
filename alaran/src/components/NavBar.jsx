@@ -53,6 +53,7 @@ const NavBar = () => {
         <ul className="nav-items desktop-nav">
           <li>Home</li>
           <li>About</li>
+          <li>Services</li>
           <li>Contact</li>
         </ul>
 
@@ -82,6 +83,7 @@ const NavBar = () => {
             >
               <li onClick={toggleMobileMenu}>Home</li>
               <li onClick={toggleMobileMenu}>About</li>
+              <li onClick={toggleMobileMenu}>Services</li>
               <li onClick={toggleMobileMenu}>Contact</li>
 
               {/* Mobile Icons */}

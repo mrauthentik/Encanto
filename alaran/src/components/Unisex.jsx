@@ -16,6 +16,9 @@ const Unisex = () => {
               <img src={image2} className='unisex-img2' alt="" />
               
             </div>
+             <section>
+               
+             </section>
         </div>
       
       </main>
