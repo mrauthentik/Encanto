@@ -34,11 +34,6 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
-
-.logo {
-  font-family: var(--fancy);
-  font-size: 2rem;
-}
 .nav-text{
   font-family: var(--font);
   color: white;
@@ -72,8 +67,13 @@ nav {
   color: tomato;
 }
 .logo{
-  width: 25%;
-  height: 25%;
+  width: 150px;
+  height: auto;
+  margin-left: 2rem;
+  img{
+    width: 65%;
+    height: auto;
+  }
 }
 /* Desktop Nav Visibility */
 .desktop-nav {
@@ -130,8 +130,7 @@ nav {
     font-size: 20px;
   }
 .logo{
-  width: 30%;
-  height: 30%;
+  width: 100px;
 }
   .menu-icon {
     display: block; /* Show menu icon */
@@ -222,6 +221,9 @@ img {
 }
 
 @media (max-width: 480px) {
+ .logo{
+  width: 50px;
+ }
   .slider-container {
     height: 70vh; /* Reduce height further for smaller devices */
   }

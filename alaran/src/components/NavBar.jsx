@@ -6,16 +6,31 @@ import logo from '../assets/alaran log2.png';
 
 const NavBar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen((prev) => !prev);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <motion.nav
-      initial={{ backgroundColor: "rgba(0, 0, 0, 0)" }}
       animate={{
-        backgroundColor: window.scrollY > 50 ? "rgba(0, 0, 0, 0.9)" : "rgba(0, 0, 0, 0)",
+        backgroundColor: isScrolled ? "rgba(0, 0, 0, 0.9)" : "rgba(0, 0, 0, 0)",
       }}
       style={{
         position: "fixed",
@@ -23,6 +38,7 @@ const NavBar = () => {
         width: "100%",
         padding: "1rem",
         zIndex: 1000,
+        transition: "background-color 0.3s ease",
       }}
     >
       <div className="navbar-container">
