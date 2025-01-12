@@ -48,6 +48,9 @@ const NavBar = () => {
         <div className="logo">
           <a href="#"><img src={logo} alt=""  className="logo"/>  </a>
         </div>
+        <div className="nav-text">
+          ALARAN AFRICA
+        </div>
 
         {/* Desktop Navigation */}
         <ul className="nav-items desktop-nav">

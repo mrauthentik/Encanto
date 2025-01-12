@@ -39,7 +39,11 @@ nav {
   font-family: var(--fancy);
   font-size: 2rem;
 }
-
+.nav-text{
+  font-family: var(--font);
+  color: white;
+  margin-left: -1rem;
+}
 .nav-items {
   display: flex;
   gap: 2rem;
@@ -93,6 +97,7 @@ nav {
   font-size: 1.5rem;
   font-family: var(--medium-text);
   cursor: pointer;
+  font-family: var(--font);
 }
 
 .mobile-nav li:hover {
@@ -103,6 +108,9 @@ nav {
 @media (max-width: 768px) {
   .desktop-nav {
     display: none; /* Hide desktop navigation */
+  }
+  .nav-text{
+    font-size: 20px;
   }
 .logo{
   width: 30%;
@@ -444,4 +452,6 @@ main p {
   background-size: contain;
   background-repeat: none;
   font-family:  'Vonique_64', sans-serif;
+ 
 }
+
