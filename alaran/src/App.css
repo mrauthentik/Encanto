@@ -514,9 +514,11 @@ main p {
   border-radius: 5px;
   border: none;
   margin-right: 0.5rem;
+  margin-top: 1rem;
 }
 
 .newsletter-button {
+  margin-top: 1rem;
   padding: 0.5rem 1rem;
   border: none;
   background-color: #f6b523;

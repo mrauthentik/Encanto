@@ -88,7 +88,7 @@ const Footer = () => {
 
       {/* Bottom Section */}
       <div className="footer-bottom">
-        <span>&copy; Copyright 2025 - Alaran Africa</span>
+        &copy; Copyright 2025 - <span> Alaran Africa</span>
       </div>
     </motion.footer>
   );
