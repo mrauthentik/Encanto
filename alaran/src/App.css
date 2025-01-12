@@ -55,7 +55,7 @@ nav {
 }
 
 .icons {
-  display: none;
+  display: flex;
   gap: 1rem;
   flex-direction: column;
   font-size: 20px;
@@ -120,6 +120,9 @@ nav {
 @media (max-width: 768px) {
   .desktop-nav {
     display: none; /* Hide desktop navigation */
+  }
+  .icons {
+    display: none;
   }
   .nav-text{
     font-size: 20px;
