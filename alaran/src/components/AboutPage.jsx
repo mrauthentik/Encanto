@@ -29,6 +29,36 @@ const teamMembers = [
       twitter: "https://twitter.com/johnsmith",
     },
   },
+  {
+    name: "Umoke Uchenna",
+    role: "Developer",
+    img: "path/to/image2.jpg",
+    socials: {
+      facebook: "https://facebook.com/johnsmith",
+      instagram: "https://instagram.com/johnsmith",
+      twitter: "https://twitter.com/johnsmith",
+    },
+  },
+  {
+    name: "Smith Adeola",
+    role: "Brand Designer",
+    img: "path/to/image2.jpg",
+    socials: {
+      facebook: "https://facebook.com/johnsmith",
+      instagram: "https://instagram.com/johnsmith",
+      twitter: "https://twitter.com/johnsmith",
+    },
+  },
+  {
+    name: "Femi Ola",
+    role: "Brand Designer",
+    img: "path/to/image2.jpg",
+    socials: {
+      facebook: "https://facebook.com/johnsmith",
+      instagram: "https://instagram.com/johnsmith",
+      twitter: "https://twitter.com/johnsmith",
+    },
+  },
   // Add more team members as needed
 ];
 
