@@ -2,6 +2,7 @@
 import NavBar from './NavBar'
 import Landing from './Landing'
 import About from './About'
+import Footer from './Footer'
 
 const AboutPage = () => {
   return (
@@ -18,6 +19,7 @@ const AboutPage = () => {
             <h2>OUR TEAM</h2>
             <p>We are a team of passionate Nigerians devoted to making a change in our generation, putting our knowledge and skills of fashion designing to help position the Africa fashion industry in the global market place. Our team includes outstanding fashion designers, business strategists, media/communication experts and so on. </p>
         </main>
+        <Footer />
     </div>
   )
 }
