@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart, faSearch, faCartShopping, faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import logo from '../assets/alaran log2.png';
+// import { Link } from 'react-router-dom';
 
 const NavBar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -82,7 +83,7 @@ const NavBar = () => {
               transition={{ duration: 0.5 }}
             >
               <li onClick={toggleMobileMenu}>Home</li>
-              <li onClick={toggleMobileMenu}>About</li>
+              <a href="./AboutPage.jsx"><li onClick={toggleMobileMenu}>About</li></a> 
               <li onClick={toggleMobileMenu}>Services</li>
               <li onClick={toggleMobileMenu}>Contact</li>
 
