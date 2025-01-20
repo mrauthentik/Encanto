@@ -10,7 +10,8 @@ const AboutPage = () => {
       <NavBar />
       <Landing />
         <About />
-         <main>
+        <section className='about-section'>
+             <main>
             <h2> THE ALARAN PROJECT</h2>
             <p>
             Our journey began as we decided to pay attention to the Nigeria textile markets, providing several indigenously made fabric designs that can compete in the global market. 
@@ -19,6 +20,8 @@ const AboutPage = () => {
             <h2>OUR TEAM</h2>
             <p>We are a team of passionate Nigerians devoted to making a change in our generation, putting our knowledge and skills of fashion designing to help position the Africa fashion industry in the global market place. Our team includes outstanding fashion designers, business strategists, media/communication experts and so on. </p>
         </main>
+        </section>
+        
         <Footer />
     </div>
   )

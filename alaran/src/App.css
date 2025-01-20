@@ -252,6 +252,7 @@ section {
 
 section h2, main h2 {
   margin-top: 5rem;
+  margin-bottom: 1rem;
   text-align: center;
   font-size: 3.5rem; /* Adjust font size for better scalability */
   color: var(--color-primary);
@@ -261,6 +262,9 @@ section h2, main h2 {
 /* Paragraph and Main Styles */
 main {
   margin-top: 2rem;
+  p{
+    margin-bottom: 2rem;
+  }
 }
 
 main p {
