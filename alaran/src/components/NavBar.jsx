@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart, faSearch, faCartShopping, faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import logo from '../assets/alaran log2.png';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -52,8 +52,8 @@ const NavBar = () => {
 
         {/* Desktop Navigation */}
         <ul className="nav-items desktop-nav">
-          <li>Home</li>
-          <li>About</li>
+          <li><Link to='/'>Home</Link></li>
+          <li><Link to='/about'>About</Link> </li>
           <li>Services</li>
           <li>Contact</li>
         </ul>
@@ -82,8 +82,8 @@ const NavBar = () => {
               exit={{ x: "100%" }}
               transition={{ duration: 0.5 }}
             >
-              <li onClick={toggleMobileMenu}>Home</li>
-              <a href="./AboutPage.jsx"><li onClick={toggleMobileMenu}>About</li></a> 
+              <li onClick={toggleMobileMenu}> <Link to='/'>  Home</Link></li>
+              <li onClick={toggleMobileMenu}><Link to='/about'>About</Link> t</li>
               <li onClick={toggleMobileMenu}>Services</li>
               <li onClick={toggleMobileMenu}>Contact</li>
 
