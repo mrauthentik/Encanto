@@ -1,18 +1,21 @@
-
+import React, { useState } from "react";
 import NavBar from "./NavBar";
 import Landing from "./Landing";
 import About from "./About";
 import Footer from "./Footer";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import img1 from "../assets/demola.png";
+import img2 from "../assets/img.jpg";
 
 
 const teamMembers = [
   {
     name: "Jane Doe",
     role: "Lead Designer",
-    img: "../assets/demola.png",
+    img: {img1}, // Corrected import
     socials: {
       facebook: "https://facebook.com/janedoe",
       instagram: "https://instagram.com/janedoe",
@@ -22,7 +25,7 @@ const teamMembers = [
   {
     name: "John Smith",
     role: "Business Strategist",
-    img: "../assets/img.jpg",
+    img: {img2}, // Corrected import
     socials: {
       facebook: "https://facebook.com/johnsmith",
       instagram: "https://instagram.com/johnsmith",
@@ -32,7 +35,7 @@ const teamMembers = [
   {
     name: "Umoke Uchenna",
     role: "Developer",
-    img: "../assets/img.jpg",
+    img: {img1},
     socials: {
       facebook: "https://facebook.com/johnsmith",
       instagram: "https://instagram.com/johnsmith",
@@ -42,7 +45,7 @@ const teamMembers = [
   {
     name: "Smith Adeola",
     role: "Brand Designer",
-    img: "../assets/img.jpg",
+    img: {img2},
     socials: {
       facebook: "https://facebook.com/johnsmith",
       instagram: "https://instagram.com/johnsmith",
@@ -52,17 +55,28 @@ const teamMembers = [
   {
     name: "Femi Ola",
     role: "Brand Designer",
-    img: "path/to/image2.jpg",
+    img: {img1},
     socials: {
       facebook: "https://facebook.com/johnsmith",
       instagram: "https://instagram.com/johnsmith",
       twitter: "https://twitter.com/johnsmith",
     },
   },
-  // Add more team members as needed
 ];
 
 const AboutPage = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % teamMembers.length);
+  };
+
+  const handlePrev = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? teamMembers.length - 1 : prevIndex - 1
+    );
+  };
+
   return (
     <div>
       <NavBar />
@@ -70,42 +84,57 @@ const AboutPage = () => {
       <About />
       <section className="about-section">
         <main>
-          <h2>THE ALARAN PROJECT</h2>
-          <p>
-            Our journey began as we decided to pay attention to the Nigeria textile markets,
-            providing several indigenously made fabric designs that can compete in the global
-            market.
-            <br />
-            The Alaran project aims to create outstanding luxury clothing designs that give you
-            confidence and promote African culture, making you stand out anywhere and everywhere
-            in the world.
-          </p>
-
           <h2>OUR TEAM</h2>
-          <div className="team-slider">
-            {teamMembers.map((member, index) => (
-              <motion.div
-                key={index}
-                className="team-card"
-                whileHover={{ scale: 1.05 }}
-                transition={{ type: "spring", stiffness: 300 }}
-              >
-                <img src={member.img} alt={`${member.name}`} className="team-image" />
-                <h3>{member.name}</h3>
-                <p>{member.role}</p>
-                <div className="team-socials">
-                  <a href={member.socials.facebook} target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon icon={faFacebook} />
-                  </a>
-                  <a href={member.socials.instagram} target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon icon={faInstagram} />
-                  </a>
-                  <a href={member.socials.twitter} target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon icon={faTwitter} />
-                  </a>
-                </div>
-              </motion.div>
-            ))}
+          <div className="slider-wrapper">
+            <button className="nav-button prev" onClick={handlePrev}>
+              <FontAwesomeIcon icon={faChevronLeft} />
+            </button>
+            <div className="slider">
+              <AnimatePresence>
+                <motion.div
+                  key={currentIndex}
+                  className="team-card"
+                  initial={{ x: 300, opacity: 0 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  exit={{ x: -300, opacity: 0 }}
+                  transition={{ duration: 0.5, ease: "easeOut" }}
+                >
+                  <img
+                    src={teamMembers[currentIndex].img}
+                    alt={teamMembers[currentIndex].name}
+                    className="team-image"
+                  />
+                  <h3>{teamMembers[currentIndex].name}</h3>
+                  <p>{teamMembers[currentIndex].role}</p>
+                  <div className="team-socials">
+                    <a
+                      href={teamMembers[currentIndex].socials.facebook}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FontAwesomeIcon icon={faFacebook} />
+                    </a>
+                    <a
+                      href={teamMembers[currentIndex].socials.instagram}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FontAwesomeIcon icon={faInstagram} />
+                    </a>
+                    <a
+                      href={teamMembers[currentIndex].socials.twitter}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FontAwesomeIcon icon={faTwitter} />
+                    </a>
+                  </div>
+                </motion.div>
+              </AnimatePresence>
+            </div>
+            <button className="nav-button next" onClick={handleNext}>
+              <FontAwesomeIcon icon={faChevronRight} />
+            </button>
           </div>
         </main>
       </section>
