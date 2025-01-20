@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faFacebook, faTwitter, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -46,10 +47,10 @@ const Footer = () => {
           <h6>Reach Us</h6>
           <p>Contact</p>
           <p>
-            E-mail: <a href="mailto:info@alaran.africa">info@alaran.africa</a>
+            E-mail: <a href="mailto:alaranafrica@gmail.com">alaranafrica@gmail.com</a>
           </p>
           <p>FAQs</p>
-          <p>Our Location</p>
+          <p>Our Location:No 10, Old soldier quarters, FCT Abuja. </p>
         </motion.div>
 
         {/* Newsletter Section */}
@@ -80,9 +81,9 @@ const Footer = () => {
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.5, duration: 0.8 }}
       >
-       <FontAwesomeIcon icon={faFacebook}  className="icon"/>
+       <FontAwesomeIcon icon={faFacebook}  className="icon"/> 
         <FontAwesomeIcon icon={faWhatsapp} className="icon" />
-        <FontAwesomeIcon icon={faInstagram}className="icon" />
+        <Link to="https://www.instagram.com/alaranafrica/"><FontAwesomeIcon icon={faInstagram}className="icon" /></Link>
         <FontAwesomeIcon icon={faTwitter} className="icon" />
       </motion.div>
 
