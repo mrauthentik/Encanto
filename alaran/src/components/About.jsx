@@ -22,10 +22,9 @@ const About = () => {
         <h2 className="about-title">About Us</h2>
         <main>
           <p>
-            Alaran is a fashion brand that offers a wide range of clothing and accessories for
-            Alaran Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque numquam debitis
-            earum consequuntur magnam adipisci esse soluta deleniti? Reiciendis voluptatum temporibus
-            unde suscipit. Dolorem error aliquam tenetur saepe reiciendis facilis!
+          At Alaran, we proudly celebrate the richness and diversity of African cultural heritage. We believe that our unique cultural identity holds immense potential for global recognition and economic growth in the 21st century. Our mission is to showcase the authenticity and beauty of African fashion on the world stage, highlighting the vibrant textiles and indigenous print fabrics that set us apart.
+
+Through our efforts, we aim to promote the African textile market, support local designers, and provide a platform for the global appreciation of African fashion. Our goal is to empower individuals to embrace their cultural heritage with confidence and style, making a statement wherever they go.
           </p>
         </main>
       </motion.div>

@@ -479,6 +479,9 @@ main p {
 .footer {
   /* background: linear-gradient(135deg, #f5821f, #0b0b0b); */
  background-color: var(--color-primary);
+ background-image: url('./assets/footer.jpg');
+ background-size: cover;
+ background-repeat: no-repeat;
   color: white;
   padding: 3rem 1rem;
   overflow: hidden;
