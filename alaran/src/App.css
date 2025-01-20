@@ -27,6 +27,9 @@ nav {
   font-size: 20px;
   font-family: var(--font);
   width: 100%;
+  li{
+    cursor: pointer;
+  }
 }
 
 .navbar-container {

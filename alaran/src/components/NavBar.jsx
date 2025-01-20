@@ -83,7 +83,7 @@ const NavBar = () => {
               transition={{ duration: 0.5 }}
             >
               <li onClick={toggleMobileMenu}> <Link to='/'>  Home</Link></li>
-              <li onClick={toggleMobileMenu}><Link to='/about'>About</Link> t</li>
+              <li onClick={toggleMobileMenu}><Link to='/about'>About</Link> </li>
               <li onClick={toggleMobileMenu}>Services</li>
               <li onClick={toggleMobileMenu}>Contact</li>
 
