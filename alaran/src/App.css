@@ -482,7 +482,7 @@ main p {
 .footer {
   /* background: linear-gradient(135deg, #f5821f, #0b0b0b); */
  background-color: var(--color-primary);
- background-image: url('./assets/footer.jpg');
+ background:linear-gradient(155deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('./assets/footer.jpg');
  background-size: cover;
  background-repeat: no-repeat;
   color: white;
