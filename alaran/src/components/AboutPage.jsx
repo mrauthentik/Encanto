@@ -3,13 +3,13 @@ import NavBar from './NavBar'
 import Landing from './Landing'
 import About from './About'
 
-const AboutPage = () => {
+const AboutPage = ({text}) => {
   return (
     <div>
       <NavBar />
       <Landing />
         <About />
-      <h1>Welcome to About us Page</h1>
+      <h1>Welcome to About us Page {text}</h1>
     </div>
   )
 }
