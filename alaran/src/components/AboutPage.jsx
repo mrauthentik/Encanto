@@ -12,7 +12,7 @@ const teamMembers = [
   {
     name: "Jane Doe",
     role: "Lead Designer",
-    img: "path/to/image1.jpg",
+    img: "../assets/demola.png",
     socials: {
       facebook: "https://facebook.com/janedoe",
       instagram: "https://instagram.com/janedoe",
@@ -22,7 +22,7 @@ const teamMembers = [
   {
     name: "John Smith",
     role: "Business Strategist",
-    img: "path/to/image2.jpg",
+    img: "../assets/img.jpg",
     socials: {
       facebook: "https://facebook.com/johnsmith",
       instagram: "https://instagram.com/johnsmith",
@@ -32,7 +32,7 @@ const teamMembers = [
   {
     name: "Umoke Uchenna",
     role: "Developer",
-    img: "path/to/image2.jpg",
+    img: "../assets/img.jpg",
     socials: {
       facebook: "https://facebook.com/johnsmith",
       instagram: "https://instagram.com/johnsmith",
@@ -42,7 +42,7 @@ const teamMembers = [
   {
     name: "Smith Adeola",
     role: "Brand Designer",
-    img: "path/to/image2.jpg",
+    img: "../assets/img.jpg",
     socials: {
       facebook: "https://facebook.com/johnsmith",
       instagram: "https://instagram.com/johnsmith",
