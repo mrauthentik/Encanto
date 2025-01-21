@@ -12,6 +12,7 @@
   --fancy: "Dancing Script",serif;
   --small-text: "Playwrite AU SA", sans-serif;
   --font: 'Vonique_64', sans-serif;
+  --poppins: 'poppins';
  
 }
 *{
@@ -492,6 +493,8 @@ main p {
   color: white;
   padding: 3rem 1rem;
   overflow: hidden;
+  font-family: var(--poppins);
+  font-weight: 300;
 }
 
 .footer-container {

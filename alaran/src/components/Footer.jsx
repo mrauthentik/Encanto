@@ -34,7 +34,7 @@ const Footer = () => {
           <h6>Quick Links</h6>
           <p>Our Brand</p>
           <p>Our Designs</p>
-          <p>About Us</p>
+          <p><Link to='/about'> About Us</Link></p>
           <p>Our Services</p>
         </motion.div>
 
