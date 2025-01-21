@@ -7,8 +7,9 @@ import image3 from "../assets/fashion (3).jpg";
 import image4 from "../assets/fashion (5).jpg";
 import image5 from "../assets/fashion (6).jpg";
 import image6 from "../assets/fashion (8).jpg";
+import image7 from "../assets/img.jpg";
 
-const images = [image1, image2, image3, image4, image5, image6];
+const images = [image7,image1, image2, image3, image4, image5,];
 const texts = [
   "About the Culture",
   "Style Meets Elegance",
@@ -41,9 +42,9 @@ const Slider = () => {
         <motion.div
           key={currentIndex}
           className="slider-wrapper"
-          initial={{ opacity: 0.9 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 1 }}
+          initial={{ opacity: 9, translateX: -600 }}
+          animate={{ opacity: 5, translateX: 0 }}
+          exit={{ opacity: 5, translateX: 1000, translateY: 1000 }}
           transition={{ duration: 2 }}
         >
           {/* Fullscreen Image */}

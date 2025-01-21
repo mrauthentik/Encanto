@@ -95,9 +95,9 @@ const AboutPage = () => {
                 <motion.div
                   key={currentIndex}
                   className="team-card"
-                  initial={{ x: 300, opacity: 0 }}
+                  initial={{ x: 300, opacity: 0, marginBottom: 50, backgroundColor: "black", color: "white" }}
                   animate={{ x: 0, opacity: 1 }}
-                  exit={{ x: -300, opacity: 0 }}
+                  exit={{ x: -300, opacity: 0, marginLeft: "50rem" }}
                   transition={{ duration: 0.5, ease: "easeOut" }}
                 >
                   <img
