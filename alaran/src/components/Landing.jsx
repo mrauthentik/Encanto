@@ -44,7 +44,7 @@ const Slider = () => {
           className="slider-wrapper"
           initial={{ opacity: 9, translateX: -600 }}
           animate={{ opacity: 5, translateX: 0 }}
-          exit={{ opacity: 5, translateX: 1000, translateY: 1000 }}
+          exit={{ opacity: 5, translateX: 1000, scale: 0.5 }}
           transition={{ duration: 2 }}
         >
           {/* Fullscreen Image */}
