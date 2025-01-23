@@ -85,6 +85,7 @@ const AboutPage = () => {
       <section className="about-section">
         <main>
           <h2>OUR TEAM</h2>
+          <button> Click</button>
           <p>We are a team of passionate Nigerians devoted to making a change in our generation, putting our knowledge and skills of fashion designing to help position the Africa fashion industry in the global market place. Our team includes outstanding fashion designers, business strategists, media/communication experts and so on. </p>
           <div className="slider-wrapper">
             <button className="nav-button prev" onClick={handlePrev}>
