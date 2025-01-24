@@ -751,8 +751,9 @@ main p {
 }
 
 .shop-now-btn:hover {
-  background-color: rgba(0, 0, 0, 0.763);
   color: var(--burnt-orange);
+  border: 1px solid var(--burnt-orange);
+  
 }
 
 @media (max-width: 768px) {
