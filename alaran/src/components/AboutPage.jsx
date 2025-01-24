@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import img1 from "../assets/demola.PNG";
-import img2 from "../assets/img.jpg";
+import img2 from "../assets/img.JPG";
 
 
 const teamMembers = [
