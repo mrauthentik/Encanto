@@ -748,6 +748,7 @@ main p {
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  border-radius: 10px;
 }
 
 .shop-now-btn:hover {
