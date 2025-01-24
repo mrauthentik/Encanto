@@ -1,4 +1,4 @@
-import  { useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
@@ -34,6 +34,16 @@ const Male = () => {
     },
   ];
 
+  const [currentHover, setCurrentHover] = useState(null);
+
+  const handleMouseEnter = (id) => {
+    setCurrentHover(id);
+  };
+
+  const handleMouseLeave = () => {
+    setCurrentHover(null);
+  };
+
   return (
     <div className="male-section">
       <h2 className="section-title">OUR DESIGNS</h2>
@@ -42,24 +52,16 @@ const Male = () => {
           <motion.div
             className="product-card"
             key={product.id}
+            onMouseEnter={() => handleMouseEnter(product.id)}
+            onMouseLeave={handleMouseLeave}
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.3 }}
           >
             <div className="image-container">
               <motion.img
-                src={product.defaultImage}
+                src={currentHover === product.id ? product.hoverImage : product.defaultImage}
                 alt={product.title}
-                className="default-image"
-                initial={{ opacity: 1 }}
-                whileHover={{ opacity: 0 }}
-                transition={{ duration: 0.5 }}
-              />
-              <motion.img
-                src={product.hoverImage}
-                alt={product.title}
-                className="hover-image"
-                initial={{ opacity: 0 }}
-                whileHover={{ opacity: 1 }}
+                className="product-image"
                 transition={{ duration: 0.5 }}
               />
             </div>
