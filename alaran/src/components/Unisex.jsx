@@ -1,7 +1,7 @@
 import image1 from '../assets/fashion (9).jpg'
 import image2 from '../assets/fashion (12).jpg'
 import alaran from '../assets/alaran logo3.png'
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, useInView} from "framer-motion";
 import { useState } from 'react';
 
 const Unisex = () => {
