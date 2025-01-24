@@ -6,8 +6,7 @@ import image2 from "../assets/fashion (2).jpg";
 import image3 from "../assets/fashion (3).jpg";
 import image4 from "../assets/fashion (5).jpg";
 import image5 from "../assets/fashion (6).jpg";
-import image6 from "../assets/fashion (8).jpg";
-import image7 from "../assets/img.jpg";
+import image7 from "../assets/img.JPG";
 
 const images = [image7,image1, image2, image3, image4, image5,];
 const texts = [
