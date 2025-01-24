@@ -15,7 +15,7 @@ const teamMembers = [
   {
     name: "Jane Doe",
     role: "Lead Designer",
-    img: {img1}, // Corrected import
+    img: img1, // Corrected import
     socials: {
       facebook: "https://facebook.com/janedoe",
       instagram: "https://instagram.com/janedoe",
@@ -25,7 +25,7 @@ const teamMembers = [
   {
     name: "John Smith",
     role: "Business Strategist",
-    img: {img2}, // Corrected import
+    img: img2, // Corrected import
     socials: {
       facebook: "https://facebook.com/johnsmith",
       instagram: "https://instagram.com/johnsmith",
@@ -35,7 +35,7 @@ const teamMembers = [
   {
     name: "Umoke Uchenna",
     role: "Developer",
-    img: {img1},
+    img: img1,
     socials: {
       facebook: "https://facebook.com/johnsmith",
       instagram: "https://instagram.com/johnsmith",
@@ -45,7 +45,7 @@ const teamMembers = [
   {
     name: "Smith Adeola",
     role: "Brand Designer",
-    img: {img2},
+    img: img2,
     socials: {
       facebook: "https://facebook.com/johnsmith",
       instagram: "https://instagram.com/johnsmith",
@@ -55,7 +55,7 @@ const teamMembers = [
   {
     name: "Femi Ola",
     role: "Brand Designer",
-    img: {img1},
+    img: img1,
     socials: {
       facebook: "https://facebook.com/johnsmith",
       instagram: "https://instagram.com/johnsmith",
