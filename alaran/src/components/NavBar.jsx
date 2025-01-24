@@ -31,7 +31,7 @@ const NavBar = () => {
   return (
     <motion.nav
       animate={{
-        backgroundColor: isScrolled ? "rgba(0, 0, 0, 0.9)" : "rgba(0, 0, 0, 0)",
+        backgroundColor: isScrolled ? "rgba(0, 0, 0, 0.9)" : "rgba(0, 0, 0, 0.68)",
       }}
       style={{
         position: "fixed",
