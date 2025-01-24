@@ -8,7 +8,11 @@ const About = () => {
   // const whyChooseUsRef = useRef(null);
 
   // InView Hooks for triggering animations
-  const isAboutInView = useInView(aboutRef, { once: true, margin: '0px 0px -100px 0px' });
+  const isAboutInView = useInView(aboutRef, { 
+    once: true, 
+    margin: '0px 0px -100px 0px' 
+  }
+);
   // const isWhyChooseUsInView = useInView(whyChooseUsRef, { once: true, margin: '0px 0px -100px 0px' });
 
   return (
