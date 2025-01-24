@@ -36,7 +36,7 @@ const Male = () => {
 
   return (
     <div className="male-section">
-      <h2 className="section-title">Our Male Collection</h2>
+      <h2 className="section-title">OUR DESIGNS</h2>
       <div className="product-grid">
         {products.map((product) => (
           <motion.div
