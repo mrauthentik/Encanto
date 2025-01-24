@@ -125,6 +125,9 @@ nav {
 .mobile-nav li:hover {
   color: var(--color-secondary);
 }
+.mobile-nav li:active{
+  color: var(--color-secondary);
+}
 
 /* Responsive Styles */
 @media (max-width: 768px) {
