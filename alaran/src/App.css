@@ -603,14 +603,18 @@ main p {
 
 .nav-button.prev {
   left: 0;
+  background-color: transparent;
+  color: var(--color-secondary);
 }
 
 .nav-button.next {
   right: 0;
+  background-color: transparent;
+  color: var(--color-secondary);
 }
 
 .slider {
-  width: 300px;
+  width: 600px;
   display: flex;
   justify-content: center;
   overflow: hidden;
@@ -622,6 +626,7 @@ main p {
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 1.5rem;
+  width: 60%;
 }
 
 .team-card img {
@@ -637,4 +642,9 @@ main p {
   justify-content: center;
   gap: 1rem;
   margin-top: 0.5rem;
+}
+.role{
+  color: var(--color-secondary);
+  font-size: 15px;
+  text-align: center;
 }

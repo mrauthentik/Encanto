@@ -85,7 +85,6 @@ const AboutPage = () => {
       <section className="about-section">
         <main>
           <h2>OUR TEAM</h2>
-          <button> Click</button>
           <p>We are a team of passionate Nigerians devoted to making a change in our generation, putting our knowledge and skills of fashion designing to help position the Africa fashion industry in the global market place. Our team includes outstanding fashion designers, business strategists, media/communication experts and so on. </p>
           <div className="slider-wrapper">
             <button className="nav-button prev" onClick={handlePrev}>
@@ -107,7 +106,7 @@ const AboutPage = () => {
                     className="team-image"
                   />
                   <h3>{teamMembers[currentIndex].name}</h3>
-                  <p>{teamMembers[currentIndex].role}</p>
+                  <p className="role">{teamMembers[currentIndex].role}</p>
                   <div className="team-socials">
                     <a
                       href={teamMembers[currentIndex].socials.facebook}
@@ -135,7 +134,7 @@ const AboutPage = () => {
               </AnimatePresence>
             </div>
             <button className="nav-button next" onClick={handleNext}>
-              <FontAwesomeIcon icon={faChevronRight} />
+              <FontAwesomeIcon icon={faChevronRight}  />
             </button>
           </div>
         </main>
