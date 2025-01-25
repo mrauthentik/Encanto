@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, easeInOut, easeOut } from "framer-motion";
 
 import image1 from "../assets/fashion (1).jpg";
 import image2 from "../assets/fashion (2).jpg";
@@ -43,8 +43,8 @@ const Slider = () => {
           className="slider-wrapper"
           initial={{ opacity: 9, translateX: -600 }}
           animate={{ opacity: 5, translateX: 0 }}
-          exit={{ opacity: 5, translateX: 1000, }}
-          transition={{ duration: 2 }}
+          exit={{ opacity: 50, translateX: 1000, animation:easeOut }}
+          transition={{ duration: 2, delay: 0 }}
         >
           {/* Fullscreen Image */}
           <img
@@ -57,7 +57,7 @@ const Slider = () => {
             className="slider-text"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
+            transition={{ duration: 0.8, delay: 3 }}
           >
             <h2>{texts[currentIndex]}</h2>
             <button className="home-btn">SHOP NOW</button>

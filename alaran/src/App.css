@@ -145,7 +145,7 @@ nav {
 
 .mobile-nav li {
   color: white;
-  font-size: 1.5rem;
+  font-size: 16px;
   font-family: var(--medium-text);
   cursor: pointer;
   font-family: var(--font);
@@ -307,7 +307,7 @@ main {
 
 main p {
   font-family: var(--medium-text);
-  font-size: 1.2rem;
+  font-size: 20px;
   line-height: 1.8; /* Improve readability */
   text-align: justify; /* Better alignment for large text */
   padding: 0;
@@ -738,6 +738,7 @@ main p {
   margin-bottom: 1rem;
   color: #666;
   font-family: var(--poppins);
+ 
 }
 
 .shop-now-btn {

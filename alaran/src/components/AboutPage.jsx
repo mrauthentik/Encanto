@@ -3,7 +3,7 @@ import NavBar from "./NavBar";
 import Landing from "./Landing";
 import About from "./About";
 import Footer from "./Footer";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, easeInOut } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
@@ -95,9 +95,9 @@ const AboutPage = () => {
                 <motion.div
                   key={currentIndex}
                   className="team-card"
-                  initial={{ x: 300, opacity: 0, marginBottom: 50, backgroundColor: "black", color: "white" }}
+                  initial={{ x: 300, opacity: 0, marginBottom: 0, backgroundColor: "black", color: "white" }}
                   animate={{ x: 0, opacity: 1 }}
-                  exit={{ x: -300, opacity: 0, marginLeft: "50rem" }}
+                  exit={{ x: -300, opacity: 1, marginLeft: "40rem", translateZ:360}}
                   transition={{ duration: 0.5, ease: "easeOut" }}
                 >
                   <img
