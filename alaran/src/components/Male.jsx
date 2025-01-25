@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { easeIn, motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import image1a from "../assets/img.JPG";
@@ -54,8 +54,8 @@ const Male = () => {
             key={product.id}
             onMouseEnter={() => handleMouseEnter(product.id)}
             onMouseLeave={handleMouseLeave}
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.3 }}
+            whileHover={{ scale: 1.05, opacity:1, transition: 2 }}
+            transition={{ duration: 1, ease:easeIn, opacity:0.5 }}
           >
             <div className="image-container">
               <motion.img

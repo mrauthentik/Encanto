@@ -559,12 +559,13 @@ main p {
 }
 
 .newsletter-input {
-  width: 70%;
+  width: 80%;
   padding: 0.5rem;
   border-radius: 5px;
   border: none;
   margin-right: 0.5rem;
   margin-top: 1rem;
+  color:black
 }
 
 .newsletter-button {
@@ -609,6 +610,19 @@ main p {
 .footer-bottom span {
   font-size: 0.9rem;
   font-family: var(--font);
+}
+.footer-logo{
+  margin: auto;
+  width: 50%;
+}
+@media (max-width:480px) {
+  .footer-logo{
+    width: 30%;
+    margin-bottom: 1rem;
+  }
+  .newsletter-input{
+   
+  }
 }
 
 .slider-wrapper {
@@ -875,3 +889,82 @@ main p {
     }
   } 
 }
+.contact-form{
+  display: block;
+  margin: auto;
+  padding: 3rem 5rem;
+  border-radius:10px ;
+  box-shadow: 1px 2px 65px 7px rgba(0, 0, 0, 0.1);
+  width: 50%;
+  font-family: var(--poppins);
+  .contact-btn{
+    background-color: transparent;
+    border: 1px solid var(--color-secondary);
+    color: var(--color-secondary);
+    font-family: var(--font);
+    padding: 10px 20px;
+    font-weight: 400;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+   margin-left: 6rem;
+   width: 50%;
+  } .contact-btn:hover{
+      background-color: var(--color-primary);
+      color: white;
+      transition: 0.4s ease-in-out;
+    }
+}
+.contact-form [type='text'],[type='email'],textarea{
+  display: block;
+  /* background-color: rgba(128, 128, 128, 0.335); */
+  margin-top: 10px;
+  height: auto;
+  width: 100%;
+  padding: 5px;
+  outline: none;
+  border-bottom: solid 1px black;
+  caret-color: var(--burnt-orange);
+  caret-shape: underscore;
+  :focus{
+    border-bottom: soild 1px green;
+  }
+}
+.contact-text{
+  font-size: 20px;
+  color: #01010184;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+@media (max-width:768px) {
+  .contact-form{
+    width: 80%;
+    padding: 2rem 2rem;
+    margin-left: 0rem;
+    margin-right: 0;
+    .contact-btn{
+      width: 80%;
+      font-size: 20px;
+      margin-left: 1rem;
+    }
+  }
+  .contact-text{
+    font-size: 15px;
+  }
+}
+@media (max-width:480px) {
+  .contact-form{
+    width: 80%;
+    padding: 2rem 2rem;
+    margin-left: 2rem;
+    .contact-btn{
+      width: 80%;
+      font-size: 20px;
+      margin-left: 1rem;
+    }
+  }
+}
+

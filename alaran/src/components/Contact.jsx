@@ -21,11 +21,12 @@ const Contact = () => {
         <section className="contact">
             <div className="contact-container">
             <h2>CONTACT US</h2>
-            <form>
-                <input type="text" placeholder="Full Name" />
+            <p className="contact-text">In one click, reach out to us for custom designs,complaint and recommendations, your sactifaction our concern</p>
+            <form className="contact-form">
+                <input type="text" placeholder="Full Name" autoFocus />
                 <input type="email" placeholder="Email Address" />
-                <textarea placeholder="Message"></textarea>
-                <button type="submit">SEND</button>
+                <textarea placeholder="Message" ></textarea>
+                <button type="submit" className="contact-btn">SEND</button>
             </form>
             </div>
             </section>

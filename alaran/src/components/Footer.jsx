@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faFacebook, faTwitter, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
+import logo from '../assets/alaran log2.png'
 
 const Footer = () => {
   return (
@@ -18,11 +19,7 @@ const Footer = () => {
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.3 }}
         >
-          {/* <h6>Our Highlights</h6>
-          <p>All Styles</p>
-          <p>Ready to Deliver</p>
-          <p>Preorder</p>
-          <p>Get Measurement</p> */}
+         <img src={logo} alt="Brand logo" className="footer-logo" />
         </motion.div>
 
         {/* Section 2 */}
@@ -34,7 +31,7 @@ const Footer = () => {
           <h6>Quick Links</h6>
           <p>Our Brand</p>
           <p>Our Designs</p>
-          <p>Get Measurement</p>
+          <p>Send Measurement</p>
           <p><Link to='/about'> About Us</Link></p>
           <p><Link to='/services'>Our Services</Link> </p>
         </motion.div>
@@ -62,7 +59,7 @@ const Footer = () => {
         >
           <h6>Newsletter</h6>
           <p>Sign up and stay updated on our latest updates and offers</p>
-          <form>
+          <form className="newsletter-input">
             <input
               type="email"
               placeholder="Email Address"
