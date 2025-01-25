@@ -36,7 +36,7 @@ const Footer = () => {
           <p>Our Designs</p>
           <p>Get Measurement</p>
           <p><Link to='/about'> About Us</Link></p>
-          <p>Our Services</p>
+          <p><Link to='/services'>Our Services</Link> </p>
         </motion.div>
 
         {/* Section 3 */}
@@ -46,11 +46,11 @@ const Footer = () => {
           transition={{ duration: 0.3 }}
         >
           <h6>Reach Us</h6>
-          <p>Contact</p>
+          <p> <Link to='/contact'>Contact</Link>  </p>
           <p>
             E-mail: <a href="mailto:alaranafrica@gmail.com">alaranafrica@gmail.com</a>
           </p>
-          <p>FAQs</p>
+          <p> <Link to='/faqs'>FAQs</Link></p>
           <p>Our Location: <i>No 10, Old soldier Quarters, FCT Abuja.</i> </p>
         </motion.div>
 
