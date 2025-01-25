@@ -86,7 +86,7 @@ const AboutPage = () => {
         <main>
           <h2>OUR TEAM</h2>
           <p>We are a team of passionate Nigerians devoted to making a change in our generation, putting our knowledge and skills of fashion designing to help position the Africa fashion industry in the global market place. Our team includes outstanding fashion designers, business strategists, media/communication experts and so on. </p>
-          <div className="slider-wrapper">
+          {/* <div className="slider-wrapper">
             <button className="nav-button prev" onClick={handlePrev}>
               <FontAwesomeIcon icon={faChevronLeft} />
             </button>
@@ -136,7 +136,7 @@ const AboutPage = () => {
             <button className="nav-button next" onClick={handleNext}>
               <FontAwesomeIcon icon={faChevronRight}  />
             </button>
-          </div>
+          </div> */}
         </main>
       </section>
       <Footer />

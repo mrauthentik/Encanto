@@ -18,11 +18,11 @@ const Footer = () => {
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.3 }}
         >
-          <h6>Our Highlights</h6>
+          {/* <h6>Our Highlights</h6>
           <p>All Styles</p>
           <p>Ready to Deliver</p>
           <p>Preorder</p>
-          <p>Get Measurement</p>
+          <p>Get Measurement</p> */}
         </motion.div>
 
         {/* Section 2 */}
@@ -34,6 +34,7 @@ const Footer = () => {
           <h6>Quick Links</h6>
           <p>Our Brand</p>
           <p>Our Designs</p>
+          <p>Get Measurement</p>
           <p><Link to='/about'> About Us</Link></p>
           <p>Our Services</p>
         </motion.div>
@@ -50,7 +51,7 @@ const Footer = () => {
             E-mail: <a href="mailto:alaranafrica@gmail.com">alaranafrica@gmail.com</a>
           </p>
           <p>FAQs</p>
-          <p>Our Location:No 10, Old soldier quarters, FCT Abuja. </p>
+          <p>Our Location: <i>No 10, Old soldier Quarters, FCT Abuja.</i> </p>
         </motion.div>
 
         {/* Newsletter Section */}
