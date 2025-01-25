@@ -841,6 +841,7 @@ main p {
   padding: 1rem;
   font-weight: 300;
   color: #010101c0;
+  border-radius: 10px;
   p:hover{
     color: var(--color-primary);
     cursor: context-menu;
