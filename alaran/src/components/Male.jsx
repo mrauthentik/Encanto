@@ -54,7 +54,7 @@ const Male = () => {
             key={product.id}
             onMouseEnter={() => handleMouseEnter(product.id)}
             onMouseLeave={handleMouseLeave}
-            whileHover={{ scale: 1.05, opacity:1, transition: 2 }}
+            whileHover={{ scale: 1.05, opacity:1, transition: 1 }}
             transition={{ duration: 1, ease:easeIn, opacity:0.5 }}
           >
             <div className="image-container">

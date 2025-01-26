@@ -588,7 +588,9 @@ main p {
   gap: 1rem;
   margin: 2rem 0;
 }
-
+Link:hover{
+ color: var(--color-secondary);
+}
 .icon {
   font-size: 2rem;
   color: white;
@@ -941,7 +943,7 @@ main p {
 
 @media (max-width:768px) {
   .contact-form{
-    width: 80%;
+    width: 100%;
     padding: 2rem 2rem;
     margin-left: 0rem;
     margin-right: 0;
@@ -957,9 +959,9 @@ main p {
 }
 @media (max-width:480px) {
   .contact-form{
-    width: 80%;
+    width: 100%;
     padding: 2rem 2rem;
-    margin-left: 2rem;
+    margin-left: 0rem;
     .contact-btn{
       width: 80%;
       font-size: 20px;
