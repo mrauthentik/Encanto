@@ -970,3 +970,10 @@ Link:hover{
   }
 }
 
+.iframe {
+  display: block;
+  margin: 2rem auto; /* Center iframe horizontally */
+  max-width: 90%; /* Make it responsive */
+  border-radius: 10px; /* Add rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Add shadow */
+}
