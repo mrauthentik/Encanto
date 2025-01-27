@@ -940,6 +940,33 @@ Link:hover{
   text-align: center;
   margin-bottom: 2rem;
 }
+.contact-blocks{
+  display: flex;
+  width: 100%;
+  padding: 2rem;
+  gap: 10px;
+  font-family: var(--poppins);
+  
+}
+.contact-block{
+  border: solid 2px rgba(0, 0, 0, 0.542);
+  padding: 2rem;
+  text-align: center;
+  border-radius: 10px;
+  width:70%;
+  h5{
+    font-weight: 700;
+    font-size: 20px;
+    padding: 1rem;
+  }
+  h5:hover{
+    color:var(--burnt-orange)
+  }
+}
+.contact-icon{
+  width: 40%;
+  height: 10%;
+}
 
 @media (max-width:768px) {
   .contact-form{
@@ -956,6 +983,16 @@ Link:hover{
   .contact-text{
     font-size: 15px;
   }
+  .contact-blocks{
+    display: block;
+    .contact-block{
+      width: 100%;
+    }
+  }
+  .contact-icon{
+    height: 5%;
+    width: 15%;
+  }
 }
 @media (max-width:480px) {
   .contact-form{
@@ -967,6 +1004,16 @@ Link:hover{
       font-size: 20px;
       margin-left: 1rem;
     }
+  }
+  .contact-blocks{
+    display: block;
+    .contact-block{
+      margin-top: 1rem;
+    }
+  }
+  .contact-icon{
+    height: 5%;
+    width: 15%;
   }
 }
 
