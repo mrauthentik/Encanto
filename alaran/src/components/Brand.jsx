@@ -15,16 +15,7 @@ const Brand = () => {
 
       {/* Hero Section */}
       <section
-        className="hero-section"
-        style={{
-          backgroundImage: `url(${waveImage})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          padding: '4rem 2rem',
-          textAlign: 'center',
-          color: '#fff',
-        }}
-      >
+        className="hero-section">
         <motion.div
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}

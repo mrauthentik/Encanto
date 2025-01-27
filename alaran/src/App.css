@@ -634,6 +634,7 @@ main p {
   overflow: hidden;
   font-family: var(--poppins);
   font-weight: 300;
+  font-family: var(--plain-text);
 }
 
 .footer-container {
@@ -1448,6 +1449,7 @@ h2 {
 
 .brand-details {
   background: #f9fafb;
+  font-family: var(--plain-text);
 }
 
 .brand-breakdown {
