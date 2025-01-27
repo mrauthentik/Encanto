@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+
 import NavBar from "./NavBar";
 import Footer from "./Footer";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight, faHeart, faCartPlus } from "@fortawesome/free-solid-svg-icons";
+import { faHeart, faCartPlus } from "@fortawesome/free-solid-svg-icons";
 import design1a from '../assets/fashion (5).jpg'
 import design1b from '../assets/design (2).jpg'
 import design2a from '../assets/img.JPG'

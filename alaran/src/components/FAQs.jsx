@@ -1,8 +1,7 @@
 import Footer from "./Footer";
 import NavBar from "./NavBar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight, faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
+import {  faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Setter from "./Setter";
