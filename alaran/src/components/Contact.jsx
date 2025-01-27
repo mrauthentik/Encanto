@@ -1,9 +1,9 @@
 import Footer from "./Footer";
 import NavBar from "./NavBar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight,  faClockRotateLeft, faLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
+import {  faClockRotateLeft, faLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
+import Setter from "./Setter";
 
 const Contact = () => {
   const iframeVariants = {
@@ -19,22 +19,7 @@ const Contact = () => {
   return (
     <div>
       <NavBar />
-      <motion.div
-        className="hero"
-        initial={{ opacity: 0, scale: 0.9 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1 }}
-      >
-        <div className="box">
-          <p>
-            <Link to="/">Home</Link>
-            <FontAwesomeIcon icon={faArrowRight} className="setter-icon" />
-            <span>
-              <Link to="/contact">Contact</Link>
-            </span>
-          </p>
-        </div>
-      </motion.div>
+     <Setter set={'Contact'} where={'/contact'}/>
       <main>
       <h2>CONTACT US</h2>
         {/* Animated iframe */}

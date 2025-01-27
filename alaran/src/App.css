@@ -164,6 +164,38 @@ nav {
   justify-content: center;
   margin-top: 2rem; /* Add spacing below nav items */
 }
+/* Search Bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 200px;
+  display: none; /* Hidden by default */
+  font-family:var(--poppins) ;
+}
+
+.search-icon {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .search-bar input {
+    max-width: 80%;
+    display: block; /* Override display for active state */
+  }
+}
+
+
 .icons :hover {
   color: tomato;
 }
@@ -233,6 +265,7 @@ nav {
   .nav-text{
     font-size: 20px;
   }
+
 .logo{
   width: 100px;
 }
@@ -902,8 +935,8 @@ Link:hover{
 }
 
 /* Services Styling */
-.hero{
-  background: url('./assets/footer.jpg'),rgba(0, 0, 0, 0.953);
+.setter-hero{
+  background: url('./assets/footer.JPG'),rgba(0, 0, 0, 0.953);
   background-size: 70pc;
   background-repeat: no-repeat;
 }
@@ -1216,5 +1249,179 @@ Link:hover{
 
   .faq-answer {
     font-size: 0.8rem;
+  }
+}
+
+
+/* Designs Styling */
+/* General Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #f4f4f4, #ddd);
+  padding: 2rem;
+  text-align: center;
+}
+
+.hero .box p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.hero .setter-icon {
+  margin: 0 0.5rem;
+  color: #888;
+}
+
+/* Filters Section */
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.filters select,
+.filters label {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: white;
+}
+
+.filters input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+/* Product Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+/* Product Card */
+.product-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.product-card h3 {
+  margin: 1rem 0 0.5rem;
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.product-card p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Product Image */
+.product-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.product-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Product Actions */
+.product-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.product-actions button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.product-actions .liked {
+  color: #ff4c4c;
+}
+
+.product-actions .not-liked {
+  color: #bbb;
+}
+
+.product-actions button:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    padding: 1rem;
+  }
+
+  .filters {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .product-card {
+    padding: 0.5rem;
+  }
+
+  .product-image img {
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .filters select,
+  .filters label {
+    font-size: 0.9rem;
+  }
+
+  .product-card {
+    padding: 0.5rem;
+  }
+
+  .product-actions button {
+    font-size: 1.25rem;
   }
 }

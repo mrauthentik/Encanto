@@ -1,22 +1,14 @@
 import NavBar from './NavBar'
 import Footer from './Footer'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight,  faMoneyBillTransfer, faRecycle, faTape, faTruck} from "@fortawesome/free-solid-svg-icons";
-import { Link } from 'react-router-dom';
+import {   faMoneyBillTransfer, faRecycle, faTape, faTruck} from "@fortawesome/free-solid-svg-icons";
+import Setter from './Setter';
 
 const Services = () => {
   return (
     <div className='services'>
       <NavBar/>
-      <div className="hero">
-         <div className="box">
-        <p> <Link to='/'>Home </Link> 
-            <FontAwesomeIcon icon={faArrowRight} className="setter-icon"/> 
-            
-            <span><Link to='/services'>Services</Link> </span></p>
-                
-         </div>  
-      </div>
+         <Setter where={'/services'} set={'Services'}/>
      
          <section>
            <h2>Our Services</h2>

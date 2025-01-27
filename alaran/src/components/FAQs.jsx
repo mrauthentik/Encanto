@@ -5,6 +5,7 @@ import { faArrowRight, faChevronDown, faChevronUp } from "@fortawesome/free-soli
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import Setter from "./Setter";
 
 const FAQItem = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -57,19 +58,11 @@ const FAQs = () => {
   return (
     <div>
       <NavBar />
-      <main>
-        <div className="hero">
-          <div className="box">
-            <p>
-              <Link to="/"> Home </Link>
-              <FontAwesomeIcon icon={faArrowRight} className="setter-icon" />
-              <span>
-                <Link to="/faqs"> FAQs</Link>
-              </span>
-            </p>
-          </div>
-        </div>
-      </main>
+     <Setter 
+      set={"FAQs"}
+      where={'/faqs'}       
+     />
+    
       <section className="faq-section">
         <h2>FREQUENTLY ASKED QUESTIONS</h2>
         <p className="faq-intro">

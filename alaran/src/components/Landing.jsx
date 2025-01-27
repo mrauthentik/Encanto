@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
 
 import image1 from "../assets/fashion (1).jpg";
 import image2 from "../assets/fashion (2).jpg";
@@ -62,7 +63,7 @@ const Slider = () => {
                 transition={{ duration: 0.8, delay: 0.5 }}
               >
                 <h2>{texts[index]}</h2>
-                <button className="home-btn">SHOP NOW</button>
+                <button className="home-btn"><Link to='/design'> SHOP NOW</Link></button>
               </motion.div>
             </motion.div>
           )
