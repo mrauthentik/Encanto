@@ -68,7 +68,7 @@ const NavBar = () => {
         {/* Mobile Menu Icon */}
         <FontAwesomeIcon
           icon={isMobileMenuOpen ? faTimes : faBars}
-          className="menu-icon"
+          className="menu-icon toggle"
           onClick={toggleMobileMenu}
         />
 

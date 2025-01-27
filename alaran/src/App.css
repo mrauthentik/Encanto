@@ -239,6 +239,8 @@ nav {
   .menu-icon {
     display: block; /* Show menu icon */
     font-size: 1.5rem;
+  }.toggle{
+    z-index: 1000;
   }
 }
 
@@ -473,7 +475,8 @@ main p {
 
 @media (max-width: 480px) {
   .card {
-    height: auto; /* Allow the section height to adjust for small screens */
+    height: 50vh; /* Allow the section height to adjust for small screens */
+   width: 100%;
     flex-direction: column; /* Stack elements for small devices */
     padding: 20px;
   }
