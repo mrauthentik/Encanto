@@ -64,6 +64,70 @@ const Brand = () => {
           </ul>
         </motion.div>
       </section>
+      <section className="brand-details px-4 py-8">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.5 }}
+          className="brand-breakdown max-w-3xl mx-auto bg-white rounded-2xl shadow-lg p-6"
+        >
+                <div className="brand-img-slide">
+                    <img src={img} alt="" />
+                    <img src={img1} alt="" className='brand-img1' />
+                </div>
+
+          <h2 className="text-2xl font-semibold mb-4 text-center">Our Identity</h2>
+          <p className="text-gray-700 mb-4 text-justify">
+            Alaran (Aláráń) is pronounced as <strong>&quot;Ala-run&quot;</strong>. The name reflects our core values and purpose.
+          </p>
+          <ul className="space-y-3">
+            <li className="flex items-start">
+              <FontAwesomeIcon icon={faArrowRight} className="mr-3 text-primary" />
+              <p>
+                <strong>Alá- (prefix):</strong> Means &quot;to choose&quot; or &quot;selected.&quot;
+              </p>
+            </li>
+            <li className="flex items-start">
+              <FontAwesomeIcon icon={faArrowRight} className="mr-3 text-primary" />
+              <p>
+                <strong>ráń (root):</strong> Means &quot;to guide&quot; or &quot;leader.&quot;
+              </p>
+            </li>
+          </ul>
+        </motion.div>
+      </section>
+      <section className="brand-details px-4 py-8">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.5 }}
+          className="brand-breakdown max-w-3xl mx-auto bg-white rounded-2xl shadow-lg p-6"
+        >
+                <div className="brand-img-slide">
+                    <img src={img} alt="" />
+                    <img src={img1} alt="" className='brand-img1' />
+                </div>
+
+          <h2 className="text-2xl font-semibold mb-4 text-center">Our Identity</h2>
+          <p className="text-gray-700 mb-4 text-justify">
+            Alaran (Aláráń) is pronounced as <strong>&quot;Ala-run&quot;</strong>. The name reflects our core values and purpose.
+          </p>
+          <ul className="space-y-3">
+            <li className="flex items-start">
+              <FontAwesomeIcon icon={faArrowRight} className="mr-3 text-primary" />
+              <p>
+                <strong>Alá- (prefix):</strong> Means &quot;to choose&quot; or &quot;selected.&quot;
+              </p>
+            </li>
+            <li className="flex items-start">
+              <FontAwesomeIcon icon={faArrowRight} className="mr-3 text-primary" />
+              <p>
+                <strong>ráń (root):</strong> Means &quot;to guide&quot; or &quot;leader.&quot;
+              </p>
+            </li>
+          </ul>
+        </motion.div>
+      </section>
 
       <Footer />
     </div>
