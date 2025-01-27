@@ -1453,6 +1453,12 @@ h2 {
   .brand-img1{
     border-top-right-radius: 10rem;
   }
+  .brand-img2{
+    border-top-right-radius: 10rem;
+  }
+  .brand-img3{
+    border-top-right-radius: 10rem;
+  }
 }
 .text-primary {
   color: #ff9800; /* Example primary color */
