@@ -1444,8 +1444,15 @@ h2 {
 }
 .brand-img-slide{
   display: flex;
-  width: 100%;
+  justify-content: center;
   height: fit-content;
+  img{
+    width: 50%;
+    height: 50%;
+  }
+  .brand-img1{
+    border-top-right-radius: 10rem;
+  }
 }
 .text-primary {
   color: #ff9800; /* Example primary color */
