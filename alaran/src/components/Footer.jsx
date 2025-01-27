@@ -29,7 +29,7 @@ const Footer = () => {
           transition={{ duration: 0.3 }}
         >
           <h6>Quick Links</h6>
-          <p>Our Brand</p>
+          <p><Link to='/brand'>Our Brand</Link> </p>
           <p> <Link to='/design'>Our Designs</Link></p>
           <p>Send Measurement</p>
           <p><Link to='/about'> About Us</Link></p>

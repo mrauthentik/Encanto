@@ -8,6 +8,7 @@ import Contact from './components/Contact.jsx'
 import Services from './components/Services.jsx'
 import FAQs from './components/FAQs.jsx'
 import Design from './components/Design.jsx'
+import Brand from './components/Brand.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -19,6 +20,7 @@ createRoot(document.getElementById('root')).render(
         <Route path='/services' element={<Services/>} />
         <Route path='/faqs' element={<FAQs/>} />
         <Route path='/design' element={<Design/>} />
+        <Route path='/brand' element={<Brand/>} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,
