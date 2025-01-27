@@ -3,6 +3,7 @@ import NavBar from './NavBar';
 import Setter from './Setter';
 import logo from '../assets/alaran logo3.png';
 import img from '../assets/fashion (10).jpg';
+import img1 from '../assets/design.jpg';
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckCircle, faArrowRight } from '@fortawesome/free-solid-svg-icons';
