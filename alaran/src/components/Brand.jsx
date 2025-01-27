@@ -6,8 +6,8 @@ import img from '../assets/fashion (10).jpg';
 import img1 from '../assets/design.jpg';
 import img2 from '../assets/design (1).jpg';
 import img3 from '../assets/demola.png';
-import img5 from '../assets/fashion (4).jpg';
-import img6 from '../assets/fashion (3).jpg';
+import img4 from '../assets/fashion (4).jpg';
+import img5 from '../assets/fashion (3).jpg';
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckCircle, faArrowRight } from '@fortawesome/free-solid-svg-icons';
@@ -48,7 +48,7 @@ const Brand = () => {
                     <img src={img1} alt="" className='brand-img1' />
                 </div>
 
-          <h2 className="text-2xl font-semibold mb-4 text-center">Our Identity</h2>
+          <h2 className="text-2xl  mb-4 text-center">Our Identity</h2>
           <p className="text-gray-700 mb-4 text-justify">
             Alaran (Aláráń) is pronounced as <strong>&quot;Ala-run&quot;</strong>. The name reflects our core values and purpose.
           </p>
@@ -76,11 +76,11 @@ const Brand = () => {
           className="brand-breakdown max-w-3xl mx-auto bg-white rounded-2xl shadow-lg p-6"
         >
                 <div className="brand-img-slide">
-                    <img src={img} alt="" />
-                    <img src={img1} alt="" className='brand-img2' />
+                    <img src={img4} alt="" />
+                    <img src={img5} alt="" className='brand-img2' />
                 </div>
 
-          <h2 className="text-2xl font-semibold mb-4 text-center">Our Identity</h2>
+          <h2 className="text-2xl  mb-4 text-center">Our Vision in identity</h2>
           <p className="text-gray-700 mb-4 text-justify">
             Alaran (Aláráń) is pronounced as <strong>&quot;Ala-run&quot;</strong>. The name reflects our core values and purpose.
           </p>
@@ -108,11 +108,11 @@ const Brand = () => {
           className="brand-breakdown max-w-3xl mx-auto bg-white rounded-2xl shadow-lg p-6"
         >
                 <div className="brand-img-slide">
-                    <img src={img} alt="" className='brand-img3' />
-                    <img src={img1} alt=""  />
+                    <img src={img2} alt="" className='brand-img3' />
+                    <img src={img3} alt=""  />
                 </div>
 
-          <h2 className="text-2xl font-semibold mb-4 text-center">Our Identity</h2>
+          <h2 className="text-2xl  mb-4 text-center">Our Awards</h2>
           <p className="text-gray-700 mb-4 text-justify">
             Alaran (Aláráń) is pronounced as <strong>&quot;Ala-run&quot;</strong>. The name reflects our core values and purpose.
           </p>
