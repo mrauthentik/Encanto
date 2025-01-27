@@ -2,7 +2,7 @@ import Footer from './Footer';
 import NavBar from './NavBar';
 import Setter from './Setter';
 import logo from '../assets/alaran logo3.png';
-import waveImage from '../assets/wave (1).svg'; // Add a wave image to your assets
+import img from '../assets/fashion (10).jpg';
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckCircle, faArrowRight } from '@fortawesome/free-solid-svg-icons';
@@ -14,8 +14,7 @@ const Brand = () => {
       <Setter set={'Our Brand'} where={'/brand'} />
 
       {/* Hero Section */}
-      <section
-        className="hero-section">
+      <section className="hero-section">
         <motion.div
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -39,6 +38,10 @@ const Brand = () => {
           transition={{ duration: 1, delay: 0.5 }}
           className="brand-breakdown max-w-3xl mx-auto bg-white rounded-2xl shadow-lg p-6"
         >
+                <div className="brand-img-slide">
+                    <img src="" alt="" />
+                </div>
+
           <h2 className="text-2xl font-semibold mb-4 text-center">Our Identity</h2>
           <p className="text-gray-700 mb-4 text-justify">
             Alaran (Aláráń) is pronounced as <strong>&quot;Ala-run&quot;</strong>. The name reflects our core values and purpose.
