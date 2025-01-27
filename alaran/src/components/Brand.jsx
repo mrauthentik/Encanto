@@ -40,6 +40,7 @@ const Brand = () => {
         >
                 <div className="brand-img-slide">
                     <img src="" alt="" />
+                    <img src="" alt="" />
                 </div>
 
           <h2 className="text-2xl font-semibold mb-4 text-center">Our Identity</h2>
