@@ -7,7 +7,7 @@ import img1 from '../assets/design.jpg';
 import img2 from '../assets/design (1).jpg';
 import img3 from '../assets/demola.png';
 import img5 from '../assets/fashion (4).jpg';
-import img6 from '../assets/design.jpg';
+import img6 from '../assets/fashion (3).jpg';
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckCircle, faArrowRight } from '@fortawesome/free-solid-svg-icons';
