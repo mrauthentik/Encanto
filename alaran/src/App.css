@@ -941,7 +941,7 @@ Link:hover{
   background-repeat: no-repeat;
 }
 @media (max-width: 768px) {
-  .hero{
+  .setter-hero{
     background-size: cover;
   }
 }
