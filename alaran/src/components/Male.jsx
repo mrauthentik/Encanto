@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { easeIn, motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
@@ -68,9 +69,11 @@ const Male = () => {
             <div className="product-info">
               <h3>{product.title}</h3>
               <p>{product.price}</p>
+              <Link to='/design' >
               <button className="shop-now-btn">
-                <FontAwesomeIcon icon={faShoppingCart} /> Shop Now
+                <FontAwesomeIcon icon={faShoppingCart} />  Shop Now
               </button>
+              </Link>
             </div>
           </motion.div>
         ))}
