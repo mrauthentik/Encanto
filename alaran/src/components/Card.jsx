@@ -20,6 +20,7 @@ const Card = () => {
             return prevIndex.map((index) => (index - 1 + 5) % 5);
         });
     };
+    
 
     const handleSwipe = (event, info) => {
         // Detect swipe direction based on velocity
