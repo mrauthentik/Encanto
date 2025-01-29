@@ -5,7 +5,7 @@ import logo from '../assets/alaran logo3.png';
 import img from '../assets/fashion (10).Jpg';
 import img1 from '../assets/design.jpg';
 import img2 from '../assets/design (1).Jpg';
-import img3 from '../assets/demola.png';
+import img3 from '../assets/demola.PNG';
 import img4 from '../assets/fashion (4).jpg';
 import img5 from '../assets/fashion (3).jpg';
 import { motion } from 'framer-motion';
