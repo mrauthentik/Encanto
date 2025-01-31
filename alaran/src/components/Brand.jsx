@@ -48,24 +48,11 @@ const Brand = () => {
                     <img src={img1} alt="" className='brand-img1' />
                 </div>
 
-          <h2 className="text-2xl  mb-4 text-center">Our Identity</h2>
+          <h2 className="text-2xl  mb-4 text-center">OUR IDENTITY</h2>
           <p className="text-gray-700 mb-4 text-justify">
-            Alaran (Aláráń) is pronounced as <strong>&quot;Ala-run&quot;</strong>. The name reflects our core values and purpose.
+            The name is originated from the word &quot; Aran &quot; which is a Yoruba name for a specific fabric type known as <strong>VELVET </strong>, in the Yoruba Culture &quot;Aran &quot; symbolizes Luxury, Elegance and Royalty.
+            <br /> The name reflects our core values and purpose in promoting the Africa fashion on the global stage. <br /> 
           </p>
-          <ul className="space-y-3">
-            <li className="flex items-start">
-              <FontAwesomeIcon icon={faArrowRight} className="mr-3 text-primary" />
-              <p>
-                <strong>Alá- (prefix):</strong> Means &quot;to choose&quot; or &quot;selected.&quot;
-              </p>
-            </li>
-            <li className="flex items-start">
-              <FontAwesomeIcon icon={faArrowRight} className="mr-3 text-primary" />
-              <p>
-                <strong>ráń (root):</strong> Means &quot;to guide&quot; or &quot;leader.&quot;
-              </p>
-            </li>
-          </ul>
         </motion.div>
       </section>
       <section className="brand-details px-4 py-8">
@@ -80,24 +67,10 @@ const Brand = () => {
                     <img src={img5} alt="" className='brand-img2' />
                 </div>
 
-          <h2 className="text-2xl  mb-4 text-center">Our Vision in identity</h2>
+          <h2 className="text-2xl  mb-4 text-center">OUR VISION</h2>
           <p className="text-gray-700 mb-4 text-justify">
-            Alaran (Aláráń) is pronounced as <strong>&quot;Ala-run&quot;</strong>. The name reflects our core values and purpose.
+           Our Vision is to promote the Africa fashion on the global stage
           </p>
-          <ul className="space-y-3">
-            <li className="flex items-start">
-              <FontAwesomeIcon icon={faArrowRight} className="mr-3 text-primary" />
-              <p>
-                <strong>Alá- (prefix):</strong> Means &quot;to choose&quot; or &quot;selected.&quot;
-              </p>
-            </li>
-            <li className="flex items-start">
-              <FontAwesomeIcon icon={faArrowRight} className="mr-3 text-primary" />
-              <p>
-                <strong>ráń (root):</strong> Means &quot;to guide&quot; or &quot;leader.&quot;
-              </p>
-            </li>
-          </ul>
         </motion.div>
       </section>
       <section className="brand-details px-4 py-8">
@@ -112,24 +85,9 @@ const Brand = () => {
                     {/* <img src={img3} alt="" className='brand-img3' /> */}
                 </div>
 
-          <h2 className="text-2xl  mb-4 text-center">Our Awards</h2>
+          <h2 className="text-2xl  mb-4 text-center">MILESTONE</h2>
           <p className="text-gray-700 mb-4 text-justify">
-            Alaran (Aláráń) is pronounced as <strong>&quot;Ala-run&quot;</strong>. The name reflects our core values and purpose.
-          </p>
-          <ul className="space-y-3">
-            <li className="flex items-start">
-              <FontAwesomeIcon icon={faArrowRight} className="mr-3 text-primary" />
-              <p>
-                <strong>Alá- (prefix):</strong> Means &quot;to choose&quot; or &quot;selected.&quot;
-              </p>
-            </li>
-            <li className="flex items-start">
-              <FontAwesomeIcon icon={faArrowRight} className="mr-3 text-primary" />
-              <p>
-                <strong>ráń (root):</strong> Means &quot;to guide&quot; or &quot;leader.&quot;
-              </p>
-            </li>
-          </ul>
+            Our CEO made it to the show on the Weekends Deal show on NTA Abuja, where he spoke intensively on the Africa Fashion      </p>
         </motion.div>
       </section>
 
