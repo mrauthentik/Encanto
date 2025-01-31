@@ -14,7 +14,7 @@ const Contact = () => {
     message: "",
   });
 
-  const phoneNumber = "+2348041602733"; // Your WhatsApp Number
+  const phoneNumber = "+2348141602733"; // Your WhatsApp Number
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
