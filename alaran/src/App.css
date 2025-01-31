@@ -1071,9 +1071,19 @@ Link:hover{
     color:var(--burnt-orange)
   }
 }
+
+
 .contact-icon{
   width: 40%;
   height: 10%;
+}
+.barcode{
+  width: 30%;
+  height: 30%;
+  margin: auto;
+}
+.barcode-title{
+  text-align: center;
 }
 
 @media (max-width:768px) {

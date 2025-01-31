@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {  faClockRotateLeft, faLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
 import Setter from "./Setter";
+import barcode from "../assets/barcode.jpeg";
 
 const Contact = () => {
   const iframeVariants = {
@@ -81,6 +82,8 @@ const Contact = () => {
               SEND
             </button>
           </form>
+          <h6 className="barcode-title"> Scan to message on Whatsapp</h6>
+           <img src={barcode} alt="" className="barcode" />
         </motion.div>
       </section>
       <Footer />
