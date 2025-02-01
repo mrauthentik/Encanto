@@ -30,7 +30,7 @@ const Contact = () => {
     }
 
     // Encode message for URL format
-    const text = `Hello, my name is ${name}. \nEmail: ${email} \nMessage: ${message}`;
+    const text = `Hello, my name is ${name}. \nEmail: ${email} \nMessage: ${message} \nMessage sent from Alaran Website`;
     const encodedText = encodeURIComponent(text);
 
     // WhatsApp URL
