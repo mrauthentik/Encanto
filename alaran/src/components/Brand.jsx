@@ -10,7 +10,7 @@ import img4 from '../assets/fashion (4).jpg';
 import img5 from '../assets/fashion (3).jpg';
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCheckCircle, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 
 const Brand = () => {
   return (
@@ -68,7 +68,7 @@ const Brand = () => {
                 </div>
 
           <h2 className="text-2xl  mb-4 text-center">OUR VISION</h2>
-          <p className="text-gray-700 mb-4 text-justify">
+          <p className="text-gray-700 mb-4 text-center text-justify">
            Our Vision is to promote the Africa fashion on the global stage
           </p>
         </motion.div>
@@ -81,8 +81,19 @@ const Brand = () => {
           className="brand-breakdown max-w-3xl mx-auto bg-white rounded-2xl shadow-lg p-6"
         >
                 <div className="brand-img-slide">
-                    <img src={img2} alt=""  />
-                    {/* <img src={img3} alt="" className='brand-img3' /> */}
+                <div className="brand-img-slide">
+                  <iframe
+                    width="100%"
+                    height="315"
+                    src="https://www.youtube.com/embed/3hr2I5DdK6M"
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="rounded-lg shadow-lg"
+                  ></iframe>
+                </div>
+
                 </div>
 
           <h2 className="text-2xl  mb-4 text-center">MILESTONE</h2>
