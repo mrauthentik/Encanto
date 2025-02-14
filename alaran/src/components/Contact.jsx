@@ -6,6 +6,8 @@ import { faClockRotateLeft, faLocationDot, faPhone } from "@fortawesome/free-sol
 import { motion } from "framer-motion";
 import Setter from "./Setter";
 import barcode from "../assets/barcode.jpeg";
+import logo from '../assets/alaran log2.png'
+import { Link } from "react-router-dom";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -99,6 +101,7 @@ const Contact = () => {
 
           {/* WhatsApp Contact Form */}
           <form className="contact-form" onSubmit={sendWhatsAppMessage}>
+             <img src={logo} alt="" className="form-img" />
             <input type="text" name="name" placeholder="Full Name" autoFocus value={formData.name} onChange={handleChange} required />
             <input type="email" name="email" placeholder="Email Address" value={formData.email} onChange={handleChange} required />
             <textarea name="message" placeholder="Message" value={formData.message} onChange={handleChange} required></textarea>
@@ -108,7 +111,7 @@ const Contact = () => {
           </form>
 
           <h6 className="barcode-title"> Scan to message on WhatsApp</h6>
-          <img src={barcode} alt="WhatsApp QR Code" className="barcode" />
+        <Link to={sendWhatsAppMessage}><img src={barcode} alt="WhatsApp QR Code" className="barcode" /></Link> 
         </motion.div>
       </section>
 

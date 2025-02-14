@@ -6,6 +6,7 @@ import img1 from "../assets/design.jpg";
 import img2 from "../assets/design (1).jpg";
 import img3 from "../assets/design (2).jpg";
 import img4 from "../assets/fashion (4).jpg";
+import Curved from "./Curved";
 
 const images = [img1, img2, img3, img4, img1, img2, img3, img4]; // Add more images
 
@@ -17,7 +18,7 @@ const Female = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % images.length);
-    }, 3000);
+    }, 4000);
     return () => clearInterval(interval);
   }, []);
 
@@ -67,10 +68,10 @@ const Female = () => {
             src={images[index]}
             alt="Fashion Design"
             className="carousel-image"
-            initial={{ opacity: 0, x: 50 }}
+            initial={{ opacity: 1, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -50 }}
-            transition={{ duration: 0.5 }}
+            exit={{ opacity: 1, x: -50 }}
+            transition={{ duration: 0.2 }}
           />
         </AnimatePresence>
 
@@ -83,18 +84,8 @@ const Female = () => {
         </button>
       </div>
 
-      <h2> The World can only Imagine</h2>
-
-      {/* Image Grid with Horizontal Scroll */}
-      <div className="image-grid-wrapper">
-        <div className="image-grid">
-          {images.slice(0, 3).map((image, i) => (
-            <div key={i}>
-              <img src={image} alt={`Design ${i + 1}`} />
-            </div>
-          ))}
-        </div>
-      </div>
+    
+       
     </section>
   );
 };

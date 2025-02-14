@@ -3,6 +3,7 @@ import Footer from './Footer'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {   faMoneyBillTransfer, faRecycle, faTape, faTruck} from "@fortawesome/free-solid-svg-icons";
 import Setter from './Setter';
+import Curved from './Curved';
 
 const Services = () => {
   return (
@@ -15,6 +16,10 @@ const Services = () => {
            <main>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil libero cumque repudiandae pariatur atque cupiditate explicabo sapiente adipisci alias dolorum voluptates consectetur dolores, earum nulla voluptatem quia assumenda necessitatibus quam.</p>
            </main>
+           <section>
+              <Curved />
+           </section>
+         
            <div className="service-set">
                   <div className="service-box">
                      <h3>Measurement</h3>
