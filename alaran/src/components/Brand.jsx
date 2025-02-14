@@ -68,7 +68,7 @@ const Brand = () => {
                 </div>
 
           <h2 className="text-2xl  mb-4 text-center">OUR VISION</h2>
-          <p className="text-gray-700 mb-4 text-center text-justify">
+          <p className="text-gray-700 mb-4 text-center ml-8 text-justify ">
            Our Vision is to promote the Africa fashion on the global stage
           </p>
         </motion.div>
