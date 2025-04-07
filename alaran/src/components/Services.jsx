@@ -12,7 +12,6 @@ import img6 from '../assets/fashion (4).jpg'
 import img7 from '../assets/fashion (12).jpg'
 import img8 from '../assets/fashion (11).jpg'
 import Setter from './Setter';
-import Curved from './Curved';
 
 const Services = () => {
   return (
@@ -26,13 +25,12 @@ const Services = () => {
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil libero cumque repudiandae pariatur atque cupiditate explicabo sapiente adipisci alias dolorum voluptates consectetur dolores, earum nulla voluptatem quia assumenda necessitatibus quam.</p>
            </main>
            <section>
-              <Curved />
            </section>
 
            {/*Catalogs*/}
            <section className="fashion-catalog px-6 py-10">
   <h2 className="text-center text-3xl font-bold mb-8">Our Fashion Catalog</h2>
-  <div className="catalog-grid">
+  <div className="catalog-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
     {[
       { img: img1, title: "Elegant Suit", name: "Classic Menswear" },
       { img: img2, title: "Modern Gown", name: "Luxury Couture" },
@@ -45,26 +43,25 @@ const Services = () => {
     ].map((item, index) => (
       <motion.div 
         key={index} 
-        className="catalog-item relative overflow-hidden rounded-2xl"
-        whileHover={{ scale: 1.05 }}
+        className="catalog-item flex flex-col overflow-hidden rounded-2xl shadow-md bg-white"
+        whileHover={{ scale: 1.03 }}
         transition={{ duration: 0.3 }}
       >
-        <img src={item.img} alt={item.title} className="w-full h-full object-cover" />
-        {/* Hover Overlay */}
-        <motion.div 
-          className="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 text-white"
-          initial={{ opacity: 0 }}
-          whileHover={{ opacity: 1 }}
-        >
-          <FontAwesomeIcon icon="tshirt" className="text-3xl mb-2" />
-          <h3 className="text-xl font-semibold">{item.title}</h3>
-          <p className="text-sm">{item.name}</p>
-        </motion.div>
+        <img 
+          src={item.img} 
+          alt={item.title} 
+          className="w-full h-60 object-cover" 
+        />
+        <div className="px-4 py-3 text-center">
+          <h3 className="text-lg font-semibold text-gray-800">{item.title}</h3>
+          <p className="text-sm text-gray-500">{item.name}</p>
+        </div>
       </motion.div>
     ))}
   </div>
 </section>
-           {/* <div className="service-set">
+
+               {/* <div className="service-set">
                   <div className="service-box">
                      <h3>Measurement</h3>
                     <FontAwesomeIcon icon={faTape} className='service-icons'/>
