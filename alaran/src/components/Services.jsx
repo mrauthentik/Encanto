@@ -1,6 +1,6 @@
 import NavBar from './NavBar'
 import Footer from './Footer'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import {   faMoneyBillTransfer, faRecycle, faTape, faTruck} from "@fortawesome/free-solid-svg-icons";
 import { motion } from 'framer-motion';
 import img1 from '../assets/design (1).jpg'
