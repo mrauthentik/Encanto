@@ -507,7 +507,7 @@ main p {
 @media (max-width: 768px) {
   .card-img {
     height: 60%; /* Adjust image height for tablets */
-    max-width: 100%;
+    max-width: 70 !important;
   }
 
   .card-btn {
@@ -526,7 +526,7 @@ main p {
 
   .card-img {
     height: 60%; /* Further reduce height for mobile */
-    max-width: 100%; /* Ensure images are full width */
+    width: 70% !important;
   }
 
   .card-btn {
