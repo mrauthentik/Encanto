@@ -1,14 +1,14 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { easeIn, motion } from "framer-motion";
+import { easeIn, easeInOut, motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
-import image1a from "../assets/img.JPG";
-import image1b from "../assets/fashion (1).jpg";
-import image2a from "../assets/img.JPG";
-import image2b from "../assets/fashion (2).jpg";
+import image1a from "../assets/images/img (5).JPG";
+import image1b from "../assets/images/img (6).JPG";
+import image2a from "../assets/images/img (13).JPG";
+import image2b from "../assets/images/img (15).JPG";
 import image3a from "../assets/img.JPG";
-import image3b from "../assets/fashion (3).jpg";
+import image3b from "../assets/images/img (3).PNG";
 
 const Male = () => {
   const products = [
@@ -56,7 +56,7 @@ const Male = () => {
             onMouseEnter={() => handleMouseEnter(product.id)}
             onMouseLeave={handleMouseLeave}
             whileHover={{ scale: 1.05, opacity:1, transition: 1 }}
-            transition={{ duration: 1, ease:easeIn, opacity:0.5 }}
+            transition={{ duration: 1, ease:easeInOut, opacity:0.5 }}
           >
             <div className="image-container">
               <motion.img

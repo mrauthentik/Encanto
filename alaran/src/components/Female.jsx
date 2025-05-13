@@ -2,11 +2,11 @@ import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import img1 from "../assets/design.jpg";
-import img2 from "../assets/design (1).jpg";
-import img3 from "../assets/design (2).jpg";
-import img4 from "../assets/fashion (4).jpg";
-import Curved from "./Curved";
+import img1 from "../assets/images/img (6).JPG";
+import img2 from "../assets/images/img (8).PNG";
+import img3 from "../assets/images/img (7).JPG";
+import img4 from "../assets/images/img (10).JPG";
+
 
 const images = [img1, img2, img3, img4, img1, img2, img3, img4]; // Add more images
 

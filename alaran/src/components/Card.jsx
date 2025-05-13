@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import image1 from "../assets/fashion (1).jpg";
-import image2 from "../assets/fashion (2).jpg";
-import image3 from "../assets/fashion (3).jpg";
-import image4 from "../assets/fashion (5).jpg";
-import image5 from "../assets/fashion (7).jpg";
+import image1 from "../assets/images/img (3).PNG";
+import image2 from "../assets/images/img (2).PNG";
+import image3 from "../assets/images/img (16).JPG";
+import image4 from "../assets/images/img (7).PNG";
+import image5 from "../assets/images/img (11).JPG";
 
 const Card = () => {
     const [positionIndex, setPositionIndex] = useState([0, 1, 2, 3, 4]);

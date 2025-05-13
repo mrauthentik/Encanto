@@ -2,11 +2,11 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 
-import image1 from "../assets/fashion (1).jpg";
-import image2 from "../assets/fashion (2).jpg";
-import image3 from "../assets/fashion (3).jpg";
-import image4 from "../assets/fashion (5).jpg";
-import image5 from "../assets/fashion (6).jpg";
+import image1 from "../assets/images/img (12).JPG";
+import image2 from "../assets/images/img (18).JPG";
+import image3 from "../assets/images/img (1).PNG";
+import image4 from "../assets/images/img (10).JPG";
+import image5 from "../assets/images/img (18).JPG";
 import image7 from "../assets/img.JPG";
 
 const images = [image7, image1, image2, image3, image4, image5];

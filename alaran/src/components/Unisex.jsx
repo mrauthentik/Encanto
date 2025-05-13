@@ -1,5 +1,5 @@
-import image1 from "../assets/fashion (9).jpg";
-import image2 from "../assets/fashion (12).jpg";
+import image1 from "../assets/images/img (14).JPG";
+import image2 from "../assets/images/img (17).JPG";
 import alaran from "../assets/alaran logo3.png";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
