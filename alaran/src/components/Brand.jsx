@@ -2,7 +2,7 @@ import Footer from './Footer';
 import NavBar from './NavBar';
 import Setter from './Setter';
 import logo from '../assets/alaran logo3.png';
-import img from '../assets/fashion (10).jpg';
+// import img from '../assets/fashion (10).jpg';
 import img1 from '../assets/design.jpg';
 import img2 from '../assets/design (1).jpg';
 // import img3 from '../assets/demola.PNG';
@@ -44,7 +44,7 @@ const Brand = () => {
           className="brand-breakdown max-w-3xl mx-auto bg-white rounded-2xl shadow-lg p-6"
         >
                 <div className="brand-img-slide">
-                    <img src={img} alt="" />
+                    <img src={img1} alt="" />
                     <img src={img1} alt="" className='brand-img1' />
                 </div>
 

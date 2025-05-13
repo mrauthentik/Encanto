@@ -1,10 +1,5 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import image1 from "../assets/images/img (3).PNG";
-import image2 from "../assets/images/img (2).PNG";
-import image3 from "../assets/images/img (16).JPG";
-import image4 from "../assets/images/img (7).PNG";
-import image5 from "../assets/images/img (11).JPG";
 
 const Card = () => {
     const [positionIndex, setPositionIndex] = useState([0, 1, 2, 3, 4]);
@@ -33,7 +28,13 @@ const Card = () => {
         }
     };
 
-    const images = [image1, image2, image3, image4, image5];
+    const images = [
+                    "https://res.cloudinary.com/dnjfc8uhs/image/upload/v1747159987/img_3_pyuimq.jpg",
+                     "https://res.cloudinary.com/dnjfc8uhs/image/upload/v1747159989/img_2_jzarjn.jpg",
+                      "https://res.cloudinary.com/dnjfc8uhs/image/upload/v1747160024/img_16_vbmtpe.jpg", 
+                      "https://res.cloudinary.com/dnjfc8uhs/image/upload/v1747159986/img_7_qnyr6j.jpg", 
+                     "https://res.cloudinary.com/dnjfc8uhs/image/upload/v1747159986/img_11_bomdv0.jpg"
+                ];
     const positions = ["center", "left", "right", "left1", "right1"];
 
     const imageVariants = {

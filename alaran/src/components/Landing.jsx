@@ -2,19 +2,20 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 
-import image1 from "../assets/images/img (12).JPG";
-import image2 from "../assets/images/img (18).JPG";
-import image3 from "../assets/images/img (1).PNG";
-import image4 from "../assets/images/img (10).JPG";
-import image5 from "../assets/images/img (18).JPG";
-import image7 from "../assets/img.JPG";
 
-const images = [image7, image1, image2, image3, image4, image5];
+const images = [
+  "https://res.cloudinary.com/dnjfc8uhs/image/upload/v1747158720/img_12_hwo1uz.jpg",
+  "https://res.cloudinary.com/dnjfc8uhs/image/upload/v1747158733/img_18_gbxlyn.jpg",
+  "https://res.cloudinary.com/dnjfc8uhs/image/upload/v1747158721/img_1_yjvef1.jpg",
+  "https://res.cloudinary.com/dnjfc8uhs/image/upload/v1747158723/img_10_hskhds.jpg",
+  "https://res.cloudinary.com/dnjfc8uhs/image/upload/v1747158733/img_18_gbxlyn.jpg",
+  "https://res.cloudinary.com/dnjfc8uhs/image/upload/v1747159018/img_dgspev.jpg",
+];
 const texts = [
   "About the Culture",
   "Style Meets Elegance",
   "Unleash Your Confidence",
-  "Timeless Trends, Endless Style",
+  "See Africa, Feel Africa",
   "Fashion for the Bold",
   "With the Beauty",
 ];

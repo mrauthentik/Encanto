@@ -1,5 +1,3 @@
-import image1 from "../assets/images/img (14).JPG";
-import image2 from "../assets/images/img (17).JPG";
 import alaran from "../assets/alaran logo3.png";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -27,7 +25,7 @@ const Unisex = () => {
           <div className="unisex-images">
             {/* Animated Image 1 */}
             <motion.img
-              src={image1}
+              src='https://res.cloudinary.com/dnjfc8uhs/image/upload/v1747160674/img_14_ivdo4a.jpg'
               alt="Unisex Fashion 1"
               className="unisex-img1"
               ref={ref1}
@@ -39,7 +37,7 @@ const Unisex = () => {
 
             {/* Animated Image 2 */}
             <motion.img
-              src={image2}
+              src="https://res.cloudinary.com/dnjfc8uhs/image/upload/v1747160674/img_17_nlvbdo.jpg"
               alt="Unisex Fashion 2"
               className="unisex-img2"
               ref={ref2}
