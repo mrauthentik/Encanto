@@ -1,4 +1,3 @@
-import alaran from "../assets/alaran logo3.png";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
@@ -19,7 +18,7 @@ const Unisex = () => {
       <main className="unisex">
         <div className="unisex-container">
           <div className="side">
-            <img src={alaran} alt="Alaran Logo" />
+            <img src="https://res.cloudinary.com/dnjfc8uhs/image/upload/v1747160788/alaran_logo3_uvphfo.png" alt="Alaran Logo" />
           </div>
 
           <div className="unisex-images">
